@@ -25,3 +25,17 @@ public struct DiscreteFuzzySet<Universe: Hashable>: FuzzySet {
         }
     }
 }
+
+public extension DiscreteFuzzySet {
+    static func fromCrispSet(_ set: Set<Universe>) -> Self {
+        let gradeTuples = set.map { ($0, 1.0 ) }
+        let gradeDictionary = Dictionary(uniqueKeysWithValues: gradeTuples)
+        return .init(elementToGradeMap: gradeDictionary)
+    }
+}
+
+public extension Set {
+    func fuzzified() -> DiscreteFuzzySet<Set.Element> {
+        DiscreteFuzzySet.fromCrispSet(self)
+    }
+}

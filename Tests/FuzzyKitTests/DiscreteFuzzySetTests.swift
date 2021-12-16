@@ -60,4 +60,24 @@ final class DiscreteFuzzySetTests: XCTestCase {
             assertExpectedGrade(element: element, expectedGrade: grade, sut: sut2)
         }
     }
+    
+    func test_fuzzify_gradesAreCorrect() throws {
+        let cs: Set<String> = ["a", "b", "c"]
+        let expected = [
+            "a": 1.0,
+            "b": 1.0,
+            "c": 1.0,
+            "d": 0.0,
+            " ": 0.0,
+            "": 0.0,
+        ]
+        
+        let fs1 = cs.fuzzified()
+        let fs2 = DiscreteFuzzySet.fromCrispSet(cs)
+        
+        for (element, grade) in expected {
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: fs1)
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: fs2)
+        }
+    }
 }
