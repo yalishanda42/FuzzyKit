@@ -2,7 +2,7 @@ import XCTest
 import FuzzyKit
 
 final class DiscreteFuzzySetTests: XCTestCase {
-    func test_DefaultInit_AllGradesAreZero() throws {
+    func test_defaultInit_allGradesAreZero() throws {
         let sut = DiscreteFuzzySet<String>()
         
         let expected = [
@@ -16,7 +16,7 @@ final class DiscreteFuzzySetTests: XCTestCase {
         }
     }
     
-    func test_InitWithParams_GradesAreCorrect() throws {
+    func test_initWithParams_gradesAreCorrect() throws {
         let parameters = [
             "a": 0.69,
             "c": 1.0,
@@ -32,6 +32,32 @@ final class DiscreteFuzzySetTests: XCTestCase {
         
         for (element, grade) in expected {
             assertExpectedGrade(element: element, expectedGrade: grade, sut: sut)
+        }
+    }
+    
+    func test_setGrade_gradesAreCorrect() throws {
+        var sut1 = DiscreteFuzzySet<String>()
+        var sut2 = DiscreteFuzzySet<String>()
+        
+        let expected = [
+            "a": 0.69,
+            "b": 0.0,
+            "c": 1.0,
+        ]
+        
+        for (element, grade) in expected {
+            if grade == 0 { continue }
+            sut1.setGrade(grade, forElement: element)
+        }
+        
+        for (element, grade) in expected {
+            if grade == 0 { continue }
+            sut2[element] = grade
+        }
+        
+        for (element, grade) in expected {
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: sut1)
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: sut2)
         }
     }
 }
