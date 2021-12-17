@@ -2,15 +2,15 @@
 public typealias Grade = Double
 
 public protocol FuzzySet {
-    associatedtype Element
+    associatedtype Universe
     
-    func grade(forElement element: Element) -> Grade
+    func grade(forElement element: Universe) -> Grade
         
-    subscript(_ element: Element) -> Grade { get }
+    subscript(_ element: Universe) -> Grade { get }
 }
 
 public extension FuzzySet {
-    subscript(_ element: Element) -> Grade {
+    subscript(_ element: Universe) -> Grade {
         get {
             grade(forElement: element)
         }

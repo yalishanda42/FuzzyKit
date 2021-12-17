@@ -1,4 +1,4 @@
-public struct DiscreteFuzzySet<Universe: Hashable>: FuzzySet {
+public struct DiscreteMutableFuzzySet<Universe: Hashable>: FuzzySet {
     
     private var grades: [Universe: Grade]
 
@@ -26,7 +26,7 @@ public struct DiscreteFuzzySet<Universe: Hashable>: FuzzySet {
     }
 }
 
-public extension DiscreteFuzzySet {
+public extension DiscreteMutableFuzzySet {
     static func fromCrispSet(_ set: Set<Universe>) -> Self {
         let gradeTuples = set.map { ($0, 1.0 ) }
         let gradeDictionary = Dictionary(uniqueKeysWithValues: gradeTuples)
@@ -35,7 +35,7 @@ public extension DiscreteFuzzySet {
 }
 
 public extension Set {
-    func fuzzified() -> DiscreteFuzzySet<Set.Element> {
-        DiscreteFuzzySet.fromCrispSet(self)
+    func fuzzified() -> DiscreteMutableFuzzySet<Set.Element> {
+        DiscreteMutableFuzzySet.fromCrispSet(self)
     }
 }

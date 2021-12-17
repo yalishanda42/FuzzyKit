@@ -1,9 +1,9 @@
 import XCTest
 import FuzzyKit
 
-final class DiscreteFuzzySetTests: XCTestCase {
+final class DiscreteMutableFuzzySetTests: XCTestCase {
     func test_defaultInit_allGradesAreZero() throws {
-        let sut = DiscreteFuzzySet<String>()
+        let sut = DiscreteMutableFuzzySet<String>()
         
         let expected = [
             "a": 0.0,
@@ -22,7 +22,7 @@ final class DiscreteFuzzySetTests: XCTestCase {
             "c": 1.0,
         ]
         
-        let sut = DiscreteFuzzySet(elementToGradeMap: parameters)
+        let sut = DiscreteMutableFuzzySet(elementToGradeMap: parameters)
         
         let expected = [
             "a": 0.69,
@@ -36,8 +36,8 @@ final class DiscreteFuzzySetTests: XCTestCase {
     }
     
     func test_setGrade_gradesAreCorrect() throws {
-        var sut1 = DiscreteFuzzySet<String>()
-        var sut2 = DiscreteFuzzySet<String>()
+        var sut1 = DiscreteMutableFuzzySet<String>()
+        var sut2 = DiscreteMutableFuzzySet<String>()
         
         let expected = [
             "a": 0.69,
@@ -73,7 +73,7 @@ final class DiscreteFuzzySetTests: XCTestCase {
         ]
         
         let fs1 = cs.fuzzified()
-        let fs2 = DiscreteFuzzySet.fromCrispSet(cs)
+        let fs2 = DiscreteMutableFuzzySet.fromCrispSet(cs)
         
         for (element, grade) in expected {
             assertExpectedGrade(element: element, expectedGrade: grade, sut: fs1)
