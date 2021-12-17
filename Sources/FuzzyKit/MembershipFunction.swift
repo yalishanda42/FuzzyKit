@@ -1,8 +1,10 @@
 public struct MembershipFunction<U: Strideable> {
     
-    private let function: (U) -> Grade
+    public typealias FunctionType = (U) -> Grade
     
-    public init(_ function: @escaping (U) -> Grade) {
+    private let function: FunctionType
+    
+    public init(_ function: @escaping FunctionType) {
         self.function = function
     }
     

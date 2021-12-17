@@ -19,6 +19,17 @@ public struct IterableFuzzySet<Universe: Strideable> {
         self.range = range
         self.function = membershipFunction
     }
+    
+    public init(range: StrideThrough<Universe>, membershipFunction: @escaping MembershipFunction<Universe>.FunctionType) {
+        self.range = range
+        self.function = .init(membershipFunction)
+    }
+    
+    public func alphaCut(_ alpha: Grade) -> Self {
+        .init(range: range) {
+            Swift.min(function($0), alpha)
+        }
+    }
 }
 
 extension IterableFuzzySet: FuzzySet {

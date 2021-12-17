@@ -7,6 +7,8 @@ public protocol FuzzySet {
     func grade(forElement element: Universe) -> Grade
         
     subscript(_ element: Universe) -> Grade { get }
+    
+    func alphaCut(_ alpha: Grade) -> Self
 }
 
 public extension FuzzySet {

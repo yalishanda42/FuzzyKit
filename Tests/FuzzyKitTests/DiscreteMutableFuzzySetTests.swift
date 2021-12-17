@@ -80,4 +80,35 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             assertExpectedGrade(element: element, expectedGrade: grade, sut: fs2)
         }
     }
+    
+    func test_alphaCut_gradesAreCorrect() {
+        let alpha = 0.5
+        let initial = [
+            "a": 1.0,
+            "b": 0.88,
+            "c": 0.69,
+            "d": 0.42,
+            "e": 0.001,
+            "f": 0.0,
+        ]
+        let expected = [
+            "a": 0.5,
+            "b": 0.5,
+            "c": 0.5,
+            "d": 0.42,
+            "e": 0.001,
+            "f": 0.0,
+        ]
+        
+        let set = DiscreteMutableFuzzySet(elementToGradeMap: initial)
+        var sut2 = DiscreteMutableFuzzySet(elementToGradeMap: initial)
+        
+        let sut1 = set.alphaCut(alpha)
+        sut2.applyAlphaCut(alpha)
+        
+        for (element, grade) in expected {
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: sut1)
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: sut2)
+        }
+    }
 }

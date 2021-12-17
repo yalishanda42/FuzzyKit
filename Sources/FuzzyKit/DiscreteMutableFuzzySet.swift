@@ -1,6 +1,6 @@
 public struct DiscreteMutableFuzzySet<Universe: Hashable>: FuzzySet {
     
-    private var grades: [Universe: Grade]
+    public private(set) var grades: [Universe: Grade]
 
     public init(elementToGradeMap: [Universe: Grade] = [:]) {
         self.grades = elementToGradeMap
@@ -23,6 +23,20 @@ public struct DiscreteMutableFuzzySet<Universe: Hashable>: FuzzySet {
         set {
             setGrade(newValue, forElement: element)
         }
+    }
+    
+    public func alphaCut(_ alpha: Grade) -> Self {
+        var newSet = Self(elementToGradeMap: grades)
+        newSet.applyAlphaCut(alpha)
+        return newSet
+    }
+    
+    public mutating func applyAlphaCut(_ alpha: Grade) {
+        let newGradeTuples = grades.map {
+            ($0.key, min($0.value, alpha))
+        }
+        let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
+        grades = newMap
     }
 }
 

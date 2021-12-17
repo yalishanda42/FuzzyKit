@@ -18,20 +18,18 @@ class IterableFuzzySetTests: XCTestCase {
     
     func test_initFromIntRangeAndDiscreteFunction() {
         let expected = near4Support4
+        let range = stride(from: 0, through: 10, by: 1)
         
-        let sut = IterableFuzzySet(
-            range: stride(from: 0, through: 10, by: 1),
-            membershipFunction: .init {
-                expected[$0].grade
-            }
-        )
+        let sut = IterableFuzzySet(range: range) {
+            expected[$0].grade
+        }
         
         let result = Array(sut)
         
         XCTAssertEqual(result, expected)
     }
     
-    func test_initFromIntRangeAndContinuousFunction() {
+    func test_initFromDoubleRangeAndContinuousFunction() {
         let expected = near4Support4.map {
             IterableFuzzySet<Double>.Element(element: Double($0.element), grade: $0.grade)
         }
@@ -44,5 +42,19 @@ class IterableFuzzySetTests: XCTestCase {
         let result = Array(sut)
         
         XCTAssertEqual(result, expected)
+    }
+    
+    func test_alphaCut_allValuesAreBelowAlpha() {
+        let alpha = 0.5
+        let set = IterableFuzzySet(
+            range: stride(from: 0.0, through: 100.0, by: 0.5),
+            membershipFunction: .triangular(minimum: 42.0, peak: 69.0, maximum: 88.88)
+        )
+        
+        let sut = set.alphaCut(alpha)
+        
+        let grades = Array(sut).map { $0.grade }
+        let allAreBelowAlpha = grades.allSatisfy { $0 <= alpha }
+        XCTAssertTrue(allAreBelowAlpha)
     }
 }

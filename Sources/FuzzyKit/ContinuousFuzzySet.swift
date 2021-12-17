@@ -7,12 +7,16 @@ public struct ContinuousFuzzySet: FuzzySet {
         self.membershipFunction = membershipFunction
     }
     
-    public init(membershipFunction: @escaping (Universe) -> Grade) {
+    public init(membershipFunction: @escaping MembershipFunction<Universe>.FunctionType) {
         self.membershipFunction = MembershipFunction(membershipFunction)
     }
     
     public func grade(forElement element: Universe) -> Grade {
         membershipFunction(element)
+    }
+    
+    public func alphaCut(_ alpha: Grade) -> Self {
+        .init { min(membershipFunction($0), alpha) }
     }
 }
 
