@@ -33,7 +33,7 @@ public struct DiscreteMutableFuzzySet<Universe: Hashable>: FuzzySet {
     
     public mutating func applyAlphaCut(_ alpha: Grade) {
         let newGradeTuples = grades.map {
-            ($0.key, min($0.value, alpha))
+            ($0.key, max($0.value, alpha))
         }
         let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
         grades = newMap

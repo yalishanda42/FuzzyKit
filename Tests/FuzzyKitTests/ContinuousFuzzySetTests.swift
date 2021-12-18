@@ -14,8 +14,8 @@ final class ContinuousFuzzySetTests: XCTestCase {
         let peakResult = sut[b]
         let maxResult = sut[c]
         
-        XCTAssertEqual(0, minResult)
-        XCTAssertEqual(alpha, peakResult)
-        XCTAssertEqual(0, maxResult)
+        XCTAssertEqual(alpha, minResult)
+        XCTAssertEqual(1.0, peakResult)
+        XCTAssertEqual(alpha, maxResult)
     }
 }

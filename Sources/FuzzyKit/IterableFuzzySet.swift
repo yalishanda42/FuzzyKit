@@ -27,7 +27,7 @@ public struct IterableFuzzySet<Universe: Strideable> {
     
     public func alphaCut(_ alpha: Grade) -> Self {
         .init(range: range) {
-            Swift.min(function($0), alpha)
+            Swift.max(function($0), alpha)
         }
     }
 }

@@ -54,7 +54,7 @@ class IterableFuzzySetTests: XCTestCase {
         let sut = set.alphaCut(alpha)
         
         let grades = Array(sut).map { $0.grade }
-        let allAreBelowAlpha = grades.allSatisfy { $0 <= alpha }
+        let allAreBelowAlpha = grades.allSatisfy { $0 >= alpha }
         XCTAssertTrue(allAreBelowAlpha)
     }
 }

@@ -92,12 +92,12 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             "f": 0.0,
         ]
         let expected = [
-            "a": 0.5,
-            "b": 0.5,
-            "c": 0.5,
-            "d": 0.42,
-            "e": 0.001,
-            "f": 0.0,
+            "a": 1.0,
+            "b": 0.88,
+            "c": 0.69,
+            "d": 0.5,
+            "e": 0.5,
+            "f": 0.5,
         ]
         
         let set = DiscreteMutableFuzzySet(elementToGradeMap: initial)

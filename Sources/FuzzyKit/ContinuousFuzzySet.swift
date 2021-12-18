@@ -16,7 +16,7 @@ public struct ContinuousFuzzySet: FuzzySet {
     }
     
     public func alphaCut(_ alpha: Grade) -> Self {
-        .init { min(membershipFunction($0), alpha) }
+        .init { max(membershipFunction($0), alpha) }
     }
 }
 
