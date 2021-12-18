@@ -38,6 +38,14 @@ public struct DiscreteMutableFuzzySet<Universe: Hashable>: FuzzySet {
         let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
         grades = newMap
     }
+    
+    public var complement: Self {
+        let newGradeTuples = grades.map {
+            ($0.key, 1 - $0.value)
+        }
+        let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
+        return .init(elementToGradeMap: newMap)
+    }
 }
 
 public extension DiscreteMutableFuzzySet {

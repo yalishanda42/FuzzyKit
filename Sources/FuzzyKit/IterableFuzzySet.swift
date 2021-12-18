@@ -30,6 +30,12 @@ public struct IterableFuzzySet<Universe: Strideable> {
             Swift.max(function($0), alpha)
         }
     }
+    
+    public var complement: Self {
+        .init(range: range) {
+            1 - function($0)
+        }
+    }
 }
 
 extension IterableFuzzySet: FuzzySet {

@@ -57,4 +57,17 @@ class IterableFuzzySetTests: XCTestCase {
         let allAreBelowAlpha = grades.allSatisfy { $0 >= alpha }
         XCTAssertTrue(allAreBelowAlpha)
     }
+    
+    func test_complementOfTriangular_allValuesAddUpToOne() {
+        let set = IterableFuzzySet(
+            range: stride(from: 0.0, through: 100.0, by: 0.5),
+            membershipFunction: .triangular(minimum: 42.0, peak: 69.0, maximum: 88.88)
+        )
+        
+        let sut = set.complement
+        
+        let sums = zip(set, sut).map { $0.0.grade + $0.1.grade }
+        
+        sums.forEach { XCTAssertApproximatelyEqual(1.0, $0) }
+    }
 }

@@ -18,6 +18,10 @@ public struct ContinuousFuzzySet: FuzzySet {
     public func alphaCut(_ alpha: Grade) -> Self {
         .init { max(membershipFunction($0), alpha) }
     }
+    
+    public var complement: Self {
+        .init { 1 - membershipFunction($0) }
+    }
 }
 
 public extension ContinuousFuzzySet {

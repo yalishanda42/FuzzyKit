@@ -9,6 +9,8 @@ public protocol FuzzySet {
     subscript(_ element: Universe) -> Grade { get }
     
     func alphaCut(_ alpha: Grade) -> Self
+    
+    var complement: Self { get }
 }
 
 public extension FuzzySet {

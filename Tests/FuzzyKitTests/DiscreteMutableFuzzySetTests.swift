@@ -111,4 +111,30 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             assertExpectedGrade(element: element, expectedGrade: grade, sut: sut2)
         }
     }
+    
+    func test_complement_gradesAreCorrect() {
+        let initial = [
+            "a": 1.0,
+            "b": 0.88,
+            "c": 0.69,
+            "d": 0.42,
+            "e": 0.001,
+            "f": 0.0,
+        ]
+        let expected = [
+            "a": 0.0,
+            "b": 0.12,
+            "c": 0.31,
+            "d": 0.58,
+            "e": 0.999,
+            "f": 1.0,
+        ]
+        let set = DiscreteMutableFuzzySet(elementToGradeMap: initial)
+        
+        let sut = set.complement
+        
+        for (element, grade) in expected {
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: sut)
+        }
+    }
 }
