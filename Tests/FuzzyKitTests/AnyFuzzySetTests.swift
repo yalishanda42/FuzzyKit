@@ -47,9 +47,9 @@ final class AnyFuzzySetTests: XCTestCase {
         let peakResult = sut[b]
         let maxResult = sut[c]
         
-        XCTAssertEqual(alpha, minResult)
-        XCTAssertEqual(1.0, peakResult)
-        XCTAssertEqual(alpha, maxResult)
+        XCTAssertApproximatelyEqual(alpha, minResult)
+        XCTAssertApproximatelyEqual(1.0, peakResult)
+        XCTAssertApproximatelyEqual(alpha, maxResult)
     }
     
     func test_triangular_complement() {
@@ -63,8 +63,8 @@ final class AnyFuzzySetTests: XCTestCase {
         let peakResult = sut[b]
         let maxResult = sut[c]
         
-        XCTAssertEqual(1.0, minResult)
-        XCTAssertEqual(0.0, peakResult)
-        XCTAssertEqual(1.0, maxResult)
+        XCTAssertApproximatelyEqual(1.0, minResult)
+        XCTAssertApproximatelyEqual(0.0, peakResult)
+        XCTAssertApproximatelyEqual(1.0, maxResult)
     }
 }

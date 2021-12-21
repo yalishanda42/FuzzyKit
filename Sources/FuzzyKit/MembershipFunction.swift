@@ -42,11 +42,51 @@ public extension MembershipFunction where U: Hashable {
 }
 
 public extension MembershipFunction where U == Double {
+    static func rightOpen(slopeStart a: U, slopeEnd b: U) -> Self {
+        assert(a < b, "Arguments do not satisfy `slopeStart < slopeEnd`!")
+        return .init { u in
+            switch u {
+            case ..<a: return 0
+            case a...b: return (u - a) / (b - a)
+            default: return 1
+            }
+        }
+    }
+    
+    static func leftOpen(slopeStart a: U, slopeEnd b: U) -> Self {
+        assert(a < b, "Arguments do not satisfy `slopeStart < slopeEnd`!")
+        return .init { u in
+            switch u {
+            case ..<a: return 1
+            case a...b: return (b - u) / (b - a)
+            default: return 0
+            }
+        }
+    }
+    
     static func triangular(minimum a: U, peak b: U, maximum c: U) -> Self {
-        .init { u in
+        assert(a < b && b < c, "Arguments do not satisfy `minimum < peak < maximum`!")
+        return .init { u in
             switch u {
             case a...b: return (u - a) / (b - a)
             case b...c: return (c - u) / (c - b)
+            default: return 0
+            }
+        }
+    }
+    
+    static func trapezoidal(
+        leftSlopeStart a: U,
+        leftSlopeEnd b: U,
+        rightSlopeStart c: U,
+        rightSlopeEnd d: U
+    ) -> Self {
+        assert(a < b && b < c && c < d, "Arguments do not satisfy `leftSlopeStart < leftSlopeEnd < rightSlopeStart < rightSlopeEnd`!")
+        return .init { u in
+            switch u {
+            case a..<b: return (u - a) / (b - a)
+            case b..<c: return 1
+            case c...d: return (d - u) / (d - c)
             default: return 0
             }
         }
