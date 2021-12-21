@@ -36,6 +36,11 @@ extension DiscreteMutableFuzzySet: FuzzySet {
         let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
         return .init(elementToGradeMap: combined)
     }
+    
+    public func difference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) -> Self {
+        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
+        return .init(elementToGradeMap: combined)
+    }
 }
 
 // MARK: - Mutability
@@ -69,6 +74,11 @@ public extension DiscreteMutableFuzzySet {
     }
     
     mutating func formIntersection(_ other: Self, method: SNormFunction = .maximum) {
+        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
+        grades = combined
+    }
+    
+    mutating func formDifference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) {
         let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
         grades = combined
     }

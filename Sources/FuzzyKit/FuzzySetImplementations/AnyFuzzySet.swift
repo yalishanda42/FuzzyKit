@@ -28,6 +28,10 @@ public struct AnyFuzzySet<Universe>: FuzzySet {
     public func union(_ other: Self, method: SNormFunction = .maximum) -> Self {
         .init { method.function(membershipFunction($0), other.membershipFunction($0)) }
     }
+    
+    public func difference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) -> Self {
+        .init { method.function(membershipFunction($0), other.membershipFunction($0)) }
+    }
 }
 
 // MARK: - Common sets

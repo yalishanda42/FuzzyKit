@@ -56,6 +56,12 @@ extension IterableFuzzySet: FuzzySet {
             method.function(function($0), other.function($0))
         }
     }
+    
+    public func difference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) -> Self {
+        .init(range: range) {
+            method.function(function($0), other.function($0))
+        }
+    }
 }
 
 // MARK: - Sequence conformance

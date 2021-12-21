@@ -41,3 +41,23 @@ public enum ComplementFunction {
         // TODO
     }
 }
+
+public enum DifferenceFunction {
+    /// `µC = t(µA(x), c(µB(x))), C = A\B`
+    case tNormAndComplement(TNormFunction, ComplementFunction)
+    /// `µC = µA - t(µA(x), µB(x)), C = A\B`
+    case differenceAndTNorm(TNormFunction)
+    
+    case custom((Grade, Grade) -> Grade)
+    
+    var function: (Grade, Grade) -> Grade {
+        switch self {
+        case .tNormAndComplement(let t, let c):
+            return { t($0, c($1)) }
+        case .differenceAndTNorm(let t):
+            return { $0 - t($0, $1) }
+        case .custom(let function):
+            return function
+        }
+    }
+}
