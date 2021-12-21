@@ -32,6 +32,10 @@ public struct AnyFuzzySet<Universe>: FuzzySet {
     public func difference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) -> Self {
         .init { method.function(membershipFunction($0), other.membershipFunction($0)) }
     }
+    
+    public func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) -> Self {
+        .init { method.function(membershipFunction($0), other.membershipFunction($0)) }
+    }
 }
 
 // MARK: - Common sets

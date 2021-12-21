@@ -62,6 +62,12 @@ extension IterableFuzzySet: FuzzySet {
             method.function(function($0), other.function($0))
         }
     }
+    
+    public func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) -> Self {
+        .init(range: range) {
+            method.function(function($0), other.function($0))
+        }
+    }
 }
 
 // MARK: - Sequence conformance

@@ -17,6 +17,8 @@ public protocol FuzzySet {
     func union(_ other: Self, method: SNormFunction) -> Self
     
     func difference(_ other: Self, method: DifferenceFunction) -> Self
+    
+    func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction) -> Self
 }
 
 public extension FuzzySet {
