@@ -68,6 +68,12 @@ extension IterableFuzzySet: FuzzySet {
             method.function(function($0), other.function($0))
         }
     }
+    
+    public func power(_ n: Double) -> Self {
+        .init(range: range) {
+            Double.pow(function($0), n)
+        }
+    }
 }
 
 // MARK: - Sequence conformance

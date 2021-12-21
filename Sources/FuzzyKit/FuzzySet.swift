@@ -19,6 +19,8 @@ public protocol FuzzySet {
     func difference(_ other: Self, method: DifferenceFunction) -> Self
     
     func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction) -> Self
+    
+    func power(_ n: Double) -> Self
 }
 
 public extension FuzzySet {

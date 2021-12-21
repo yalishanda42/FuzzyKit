@@ -1,3 +1,5 @@
+import RealModule
+
 public struct AnyFuzzySet<Universe>: FuzzySet {
     internal let membershipFunction: MembershipFunction<Universe>
     
@@ -35,6 +37,10 @@ public struct AnyFuzzySet<Universe>: FuzzySet {
     
     public func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) -> Self {
         .init { method.function(membershipFunction($0), other.membershipFunction($0)) }
+    }
+    
+    public func power(_ n: Double) -> Self {
+        return .init { Double.pow(membershipFunction($0), n) }
     }
 }
 

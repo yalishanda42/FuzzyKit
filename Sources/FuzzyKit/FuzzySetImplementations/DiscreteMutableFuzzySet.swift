@@ -46,6 +46,12 @@ extension DiscreteMutableFuzzySet: FuzzySet {
         let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
         return .init(elementToGradeMap: combined)
     }
+    
+    public func power(_ n: Double) -> Self {
+        var result = Self(elementToGradeMap: grades)
+        result.applyPower(n)
+        return result
+    }
 }
 
 // MARK: - Mutability
@@ -91,6 +97,10 @@ public extension DiscreteMutableFuzzySet {
     mutating func formSymmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) {
         let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
         grades = combined
+    }
+    
+    mutating func applyPower(_ n: Double) {
+        applyFunction { Double.pow($0, n) }
     }
 }
 
