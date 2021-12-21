@@ -24,6 +24,14 @@ public struct IterableFuzzySet<Universe: Strideable> {
         self.range = range
         self.function = .init(membershipFunction)
     }
+}
+
+// MARK: - FuzzySet conformance
+
+extension IterableFuzzySet: FuzzySet {
+    public func grade(forElement element: Universe) -> Grade {
+        function(element)
+    }
     
     public func alphaCut(_ alpha: Grade) -> Self {
         .init(range: range) {
@@ -31,19 +39,27 @@ public struct IterableFuzzySet<Universe: Strideable> {
         }
     }
     
-    public var complement: Self {
+    public func complement(method: ComplementFunction = .standard) -> Self {
         .init(range: range) {
-            1 - function($0)
+            method.function(function($0))
+        }
+    }
+    
+    public func intersection(_ other: Self, method: TNormFunction = .minimum) -> Self {
+        .init(range: range) {
+            method.function(function($0), other.function($0))
+        }
+    }
+    
+    public func union(_ other: Self, method: SNormFunction = .maximum) -> Self {
+        .init(range: range) {
+            method.function(function($0), other.function($0))
         }
     }
 }
 
-extension IterableFuzzySet: FuzzySet {
-    public func grade(forElement element: Universe) -> Grade {
-        function(element)
-    }
-}
-    
+// MARK: - Sequence conformance
+
 extension IterableFuzzySet: Sequence {
     public func makeIterator() -> Iterator {
         range

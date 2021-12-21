@@ -131,7 +131,7 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
         ]
         let set = DiscreteMutableFuzzySet(elementToGradeMap: initial)
         
-        let sut = set.complement
+        let sut = set.complement()
         
         for (element, grade) in expected {
             assertExpectedGrade(element: element, expectedGrade: grade, sut: sut)

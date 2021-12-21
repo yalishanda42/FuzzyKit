@@ -10,7 +10,11 @@ public protocol FuzzySet {
     
     func alphaCut(_ alpha: Grade) -> Self
     
-    var complement: Self { get }
+    func complement(method: ComplementFunction) -> Self
+    
+    func intersection(_ other: Self, method: TNormFunction) -> Self
+    
+    func union(_ other: Self, method: SNormFunction) -> Self    
 }
 
 public extension FuzzySet {
@@ -20,4 +24,3 @@ public extension FuzzySet {
         }
     }
 }
-

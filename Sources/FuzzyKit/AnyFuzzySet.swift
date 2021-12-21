@@ -1,5 +1,4 @@
 public struct AnyFuzzySet<Universe>: FuzzySet {
-    
     internal let membershipFunction: MembershipFunction<Universe>
     
     public init(membershipFunction: MembershipFunction<Universe>) {
@@ -18,10 +17,20 @@ public struct AnyFuzzySet<Universe>: FuzzySet {
         .init { max(membershipFunction($0), alpha) }
     }
     
-    public var complement: Self {
-        .init { 1 - membershipFunction($0) }
+    public func complement(method: ComplementFunction = .standard) -> Self {
+        .init { method.function(membershipFunction($0)) }
+    }
+    
+    public func intersection(_ other: Self, method: TNormFunction = .minimum) -> Self {
+        .init { method.function(membershipFunction($0), other.membershipFunction($0)) }
+    }
+    
+    public func union(_ other: Self, method: SNormFunction = .maximum) -> Self {
+        .init { method.function(membershipFunction($0), other.membershipFunction($0)) }
     }
 }
+
+// MARK: - Common sets
 
 public extension AnyFuzzySet {
     static var empty: Self {
@@ -32,6 +41,8 @@ public extension AnyFuzzySet {
         .init(membershipFunction: .one)
     }
 }
+
+// MARK: - Type erasure
 
 public extension DiscreteMutableFuzzySet {
     func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {

@@ -1,22 +1,52 @@
-public struct DiscreteMutableFuzzySet<Universe: Hashable>: FuzzySet {
+public struct DiscreteMutableFuzzySet<Universe: Hashable> {
     
     public private(set) var grades: [Universe: Grade]
 
     public init(elementToGradeMap: [Universe: Grade] = [:]) {
         self.grades = elementToGradeMap
     }
-    
+}
+
+// MARK: - FuzzySet conformance
+
+extension DiscreteMutableFuzzySet: FuzzySet {
     /// - Complexity: O(1)
     public func grade(forElement element: Universe) -> Grade {
         grades[element] ?? 0
     }
     
+    public func alphaCut(_ alpha: Grade) -> Self {
+        var result = Self(elementToGradeMap: grades)
+        result.applyAlphaCut(alpha)
+        return result
+    }
+    
+    public func complement(method: ComplementFunction = .standard) -> Self {
+        var result = Self(elementToGradeMap: grades)
+        result.formComplement()
+        return result
+    }
+    
+    public func intersection(_ other: Self, method: TNormFunction = .minimum) -> Self {
+        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
+        return .init(elementToGradeMap: combined)
+    }
+    
+    public func union(_ other: Self, method: SNormFunction) -> Self {
+        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
+        return .init(elementToGradeMap: combined)
+    }
+}
+
+// MARK: - Mutability
+
+public extension DiscreteMutableFuzzySet {
     /// - Complexity: O(1)
-    public mutating func setGrade(_ grade: Grade, forElement element: Universe) {
+    mutating func setGrade(_ grade: Grade, forElement element: Universe) {
         grades[element] = grade
     }
     
-    public subscript(_ element: Universe) -> Grade {
+    subscript(_ element: Universe) -> Grade {
         get {
             grade(forElement: element)
         }
@@ -25,29 +55,26 @@ public struct DiscreteMutableFuzzySet<Universe: Hashable>: FuzzySet {
         }
     }
     
-    public func alphaCut(_ alpha: Grade) -> Self {
-        var newSet = Self(elementToGradeMap: grades)
-        newSet.applyAlphaCut(alpha)
-        return newSet
+    mutating func applyAlphaCut(_ alpha: Grade) {
+        applyFunction { max($0, alpha) }
     }
     
-    public mutating func applyAlphaCut(_ alpha: Grade) {
-        let newGradeTuples = grades.map {
-            ($0.key, max($0.value, alpha))
-        }
-        let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
-        grades = newMap
+    mutating func formComplement(method: ComplementFunction = .standard) {
+        applyFunction(method.function)
     }
     
-    public var complement: Self {
-        let newGradeTuples = grades.map {
-            ($0.key, 1 - $0.value)
-        }
-        let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
-        return .init(elementToGradeMap: newMap)
+    mutating func formIntersection(_ other: Self, method: TNormFunction = .minimum) {
+        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
+        grades = combined
+    }
+    
+    mutating func formIntersection(_ other: Self, method: SNormFunction = .maximum) {
+        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
+        grades = combined
     }
 }
 
+// MARK: - From crisp set
 public extension DiscreteMutableFuzzySet {
     static func fromCrispSet(_ set: Set<Universe>) -> Self {
         let gradeTuples = set.map { ($0, 1.0 ) }
@@ -59,5 +86,17 @@ public extension DiscreteMutableFuzzySet {
 public extension Set {
     func fuzzified() -> DiscreteMutableFuzzySet<Set.Element> {
         DiscreteMutableFuzzySet.fromCrispSet(self)
+    }
+}
+
+// MARK: - Helpers
+
+private extension DiscreteMutableFuzzySet {
+    mutating func applyFunction(_ function: (Grade) -> Grade) {
+        let newGradeTuples = grades.map {
+            ($0.key, function($0.value))
+        }
+        let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
+        grades = newMap
     }
 }

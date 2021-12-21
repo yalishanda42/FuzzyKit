@@ -64,7 +64,7 @@ class IterableFuzzySetTests: XCTestCase {
             membershipFunction: .triangular(minimum: 42.0, peak: 69.0, maximum: 88.88)
         )
         
-        let sut = set.complement
+        let sut = set.complement()
         
         let sums = zip(set, sut).map { $0.0.grade + $0.1.grade }
         

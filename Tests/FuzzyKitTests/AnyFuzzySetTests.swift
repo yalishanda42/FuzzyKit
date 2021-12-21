@@ -58,7 +58,7 @@ final class AnyFuzzySetTests: XCTestCase {
         let c = 8.0
         let set = AnyFuzzySet(membershipFunction: .triangular(minimum: a, peak: b, maximum: c))
         
-        let sut = set.complement
+        let sut = set.complement()
         let minResult = sut[a]
         let peakResult = sut[b]
         let maxResult = sut[c]
