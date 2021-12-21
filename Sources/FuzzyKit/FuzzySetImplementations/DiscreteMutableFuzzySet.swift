@@ -88,7 +88,7 @@ public extension DiscreteMutableFuzzySet {
         grades = combined
     }
     
-    mutating func formSymmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue)) {
+    mutating func formSymmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) {
         let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
         grades = combined
     }
