@@ -1,7 +1,6 @@
-public struct ContinuousFuzzySet: FuzzySet {
-    public typealias Universe = Double
+public struct AnyFuzzySet<Universe>: FuzzySet {
     
-    private let membershipFunction: MembershipFunction<Universe>
+    internal let membershipFunction: MembershipFunction<Universe>
     
     public init(membershipFunction: MembershipFunction<Universe>) {
         self.membershipFunction = membershipFunction
@@ -24,12 +23,24 @@ public struct ContinuousFuzzySet: FuzzySet {
     }
 }
 
-public extension ContinuousFuzzySet {
+public extension AnyFuzzySet {
     static var empty: Self {
         .init(membershipFunction: .zero)
     }
     
     static var universe: Self {
         .init(membershipFunction: .one)
+    }
+}
+
+public extension DiscreteMutableFuzzySet {
+    func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
+        .init(membershipFunction: .fromDictionary(grades))
+    }
+}
+
+public extension IterableFuzzySet {
+    func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
+        .init(membershipFunction: function)
     }
 }

@@ -3,11 +3,10 @@ import FuzzyKit
 
 final class MembershipFunctionTests: XCTestCase {
     func test_isCallable() throws {
-        let sut = MembershipFunction<Double>.one
-        let x = 1.0
+        let sut = MembershipFunction<Void>.one
         
-        let result = sut(x)
+        let result = sut(())
         
-        XCTAssertEqual(result, x)
+        XCTAssertApproximatelyEqual(result, 1.0)
     }
 }

@@ -1,4 +1,5 @@
-public struct MembershipFunction<U: Strideable> {
+import CoreGraphics
+public struct MembershipFunction<U> {
     
     public typealias FunctionType = (U) -> Grade
     
@@ -22,9 +23,21 @@ public extension MembershipFunction {
     static var one: Self {
         .init { _ in 1 }
     }
-    
+}
+
+public extension MembershipFunction where U: Equatable {
     static func fuzzySingleton(_ onlyMember: U) -> Self {
         .init { $0 == onlyMember ? 1 : 0 }
+    }
+}
+
+public extension MembershipFunction where U: Hashable {
+    static func fromCrispSet(_ set: Set<U>) -> Self {
+        .init { set.contains($0) ? 1 : 0 }
+    }
+    
+    static func fromDictionary(_ dictionary: [U: Grade]) -> Self {
+        .init { dictionary[$0] ?? 0 }
     }
 }
 

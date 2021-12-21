@@ -12,8 +12,8 @@ public struct IterableFuzzySet<Universe: Strideable> {
     
     public typealias Iterator = Array<Element>.Iterator
     
-    private let range: StrideThrough<Universe>
-    private let function: MembershipFunction<Universe>
+    internal let range: StrideThrough<Universe>
+    internal let function: MembershipFunction<Universe>
     
     public init(range: StrideThrough<Universe>, membershipFunction: MembershipFunction<Universe>) {
         self.range = range
