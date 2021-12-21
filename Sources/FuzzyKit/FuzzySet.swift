@@ -14,7 +14,7 @@ public protocol FuzzySet {
     
     func intersection(_ other: Self, method: TNormFunction) -> Self
     
-    func union(_ other: Self, method: SNormFunction) -> Self    
+    func union(_ other: Self, method: SNormFunction) -> Self
 }
 
 public extension FuzzySet {
