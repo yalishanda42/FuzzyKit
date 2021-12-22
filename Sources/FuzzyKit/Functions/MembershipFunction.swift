@@ -1,4 +1,5 @@
-import CoreGraphics
+import RealModule
+
 public struct MembershipFunction<U> {
     
     public typealias FunctionType = (U) -> Grade
@@ -89,6 +90,24 @@ public extension MembershipFunction where U == Double {
             case c...d: return (d - u) / (d - c)
             default: return 0
             }
+        }
+    }
+    
+    static func gaussian(mean c: Double = 0, stdev s: Double = 1) -> Self {
+        .init { u in
+            Double.exp(-((u - c).pow(2)) / (2 * s.pow(2)))
+        }
+    }
+    
+    static func bell(width a: Double, shape b: Double, center c: Double) -> Self {
+        return .init { u in
+            1 / (1 + abs((u - c) / a).pow(2*b))
+        }
+    }
+    
+    static func sigmoid(width a: Double, center c: Double) -> Self {
+        return .init { u in
+            1 / (1 + Double.exp(-a * (u - c)))
         }
     }
     

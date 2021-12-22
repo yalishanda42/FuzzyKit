@@ -169,6 +169,10 @@ internal extension Double {
         Double.pow(self, x)
     }
     
+    func pow(_ n: Int) -> Double {
+        Double.pow(self, n)
+    }
+    
     func log(base: Double) -> Double {
         Double.log(self) / Double.log(base)
     }
