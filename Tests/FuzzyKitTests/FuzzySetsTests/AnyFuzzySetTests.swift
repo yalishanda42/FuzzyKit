@@ -24,7 +24,7 @@ final class AnyFuzzySetTests: XCTestCase {
     func test_initFromIterableFuzzySet() {
         let range = stride(from: 0, through: 10, by: 0.5)
         let function = MembershipFunction.triangular(minimum: 42, peak: 69, maximum: 88)
-        let set = IterableFuzzySet(range: range, membershipFunction: function)
+        let set = IterableFuzzySet(range, membershipFunction: function)
         
         let sut = set.eraseToAnyFuzzySet()
         

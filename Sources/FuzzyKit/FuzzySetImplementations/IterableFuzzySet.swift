@@ -1,6 +1,6 @@
-public struct IterableFuzzySet<Universe: Strideable> {
+public struct IterableFuzzySet<Universe, S: Sequence> where S.Element == Universe {
     
-    public struct Element: Equatable {
+    public struct Element {
         public let element: Universe
         public let grade: Grade
         
@@ -12,16 +12,16 @@ public struct IterableFuzzySet<Universe: Strideable> {
     
     public typealias Iterator = Array<Element>.Iterator
     
-    internal let range: StrideThrough<Universe>
+    internal let sequence: S
     internal let function: MembershipFunction<Universe>
     
-    public init(range: StrideThrough<Universe>, membershipFunction: MembershipFunction<Universe>) {
-        self.range = range
+    public init(_ sequence: S, membershipFunction: MembershipFunction<Universe>) {
+        self.sequence = sequence
         self.function = membershipFunction
     }
     
-    public init(range: StrideThrough<Universe>, membershipFunction: @escaping MembershipFunction<Universe>.FunctionType) {
-        self.range = range
+    public init(_ sequence: S, membershipFunction: @escaping MembershipFunction<Universe>.FunctionType) {
+        self.sequence = sequence
         self.function = .init(membershipFunction)
     }
 }
@@ -34,43 +34,43 @@ extension IterableFuzzySet: FuzzySet {
     }
     
     public func alphaCut(_ alpha: Grade) -> Self {
-        .init(range: range) {
+        .init(sequence) {
             Swift.max(function($0), alpha)
         }
     }
     
     public func complement(method: ComplementFunction = .standard) -> Self {
-        .init(range: range) {
+        .init(sequence) {
             method.function(function($0))
         }
     }
     
     public func intersection(_ other: Self, method: TNormFunction = .minimum) -> Self {
-        .init(range: range) {
+        .init(sequence) {
             method.function(function($0), other.function($0))
         }
     }
     
     public func union(_ other: Self, method: SNormFunction = .maximum) -> Self {
-        .init(range: range) {
+        .init(sequence) {
             method.function(function($0), other.function($0))
         }
     }
     
     public func difference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) -> Self {
-        .init(range: range) {
+        .init(sequence) {
             method.function(function($0), other.function($0))
         }
     }
     
     public func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) -> Self {
-        .init(range: range) {
+        .init(sequence) {
             method.function(function($0), other.function($0))
         }
     }
     
     public func power(_ n: Double) -> Self {
-        .init(range: range) {
+        .init(sequence) {
             Double.pow(function($0), n)
         }
     }
@@ -80,7 +80,7 @@ extension IterableFuzzySet: FuzzySet {
 
 extension IterableFuzzySet: Sequence {
     public func makeIterator() -> Iterator {
-        range
+        sequence
             .map { .init(
                 element: $0,
                 grade: grade(forElement: $0)
@@ -88,3 +88,10 @@ extension IterableFuzzySet: Sequence {
             .makeIterator()
     }
 }
+
+// MARK: - Utility
+
+extension IterableFuzzySet.Element: Equatable where Universe: Equatable {}
+extension IterableFuzzySet.Element: Hashable where Universe: Hashable {}
+extension IterableFuzzySet.Element: Encodable where Universe: Encodable {}
+extension IterableFuzzySet.Element: Decodable where Universe: Decodable {}

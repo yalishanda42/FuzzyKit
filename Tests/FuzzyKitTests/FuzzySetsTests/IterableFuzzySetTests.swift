@@ -2,7 +2,7 @@ import XCTest
 import FuzzyKit
 
 class IterableFuzzySetTests: XCTestCase {
-    private var near4Support4: [IterableFuzzySet<Int>.Element] = [
+    private var near4Support4: [IterableFuzzySet<Int, StrideThrough<Int>>.Element] = [
         .init(element: 0, grade: 0.0),
         .init(element: 1, grade: 0.25),
         .init(element: 2, grade: 0.50),
@@ -20,7 +20,7 @@ class IterableFuzzySetTests: XCTestCase {
         let expected = near4Support4
         let range = stride(from: 0, through: 10, by: 1)
         
-        let sut = IterableFuzzySet(range: range) {
+        let sut = IterableFuzzySet(range) {
             expected[$0].grade
         }
         
@@ -31,11 +31,14 @@ class IterableFuzzySetTests: XCTestCase {
     
     func test_initFromDoubleRangeAndContinuousFunction() {
         let expected = near4Support4.map {
-            IterableFuzzySet<Double>.Element(element: Double($0.element), grade: $0.grade)
+            IterableFuzzySet<Double, StrideThrough<Double>>.Element(
+                element: Double($0.element),
+                grade: $0.grade
+            )
         }
         
         let sut = IterableFuzzySet(
-            range: stride(from: 0.0, through: 10.0, by: 1),
+            stride(from: 0.0, through: 10.0, by: 1),
             membershipFunction: .triangular(minimum: 0.0, peak: 4.0, maximum: 8.0)
         )
         
@@ -47,7 +50,7 @@ class IterableFuzzySetTests: XCTestCase {
     func test_alphaCut_allValuesAreBelowAlpha() {
         let alpha = 0.5
         let set = IterableFuzzySet(
-            range: stride(from: 0.0, through: 100.0, by: 0.5),
+            stride(from: 0.0, through: 100.0, by: 0.5),
             membershipFunction: .triangular(minimum: 42.0, peak: 69.0, maximum: 88.88)
         )
         
@@ -60,7 +63,7 @@ class IterableFuzzySetTests: XCTestCase {
     
     func test_complementOfTriangular_allValuesAddUpToOne() {
         let set = IterableFuzzySet(
-            range: stride(from: 0.0, through: 100.0, by: 0.5),
+            stride(from: 0.0, through: 100.0, by: 0.5),
             membershipFunction: .triangular(minimum: 42.0, peak: 69.0, maximum: 88.88)
         )
         
