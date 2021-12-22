@@ -23,28 +23,32 @@ extension DiscreteMutableFuzzySet: FuzzySet {
     
     public func complement(method: ComplementFunction = .standard) -> Self {
         var result = Self(elementToGradeMap: grades)
-        result.formComplement()
+        result.formComplement(method: method)
         return result
     }
     
     public func intersection(_ other: Self, method: TNormFunction = .minimum) -> Self {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        return .init(elementToGradeMap: combined)
+        var result = Self(elementToGradeMap: grades)
+        result.formIntersection(other, method: method)
+        return result
     }
     
     public func union(_ other: Self, method: SNormFunction) -> Self {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        return .init(elementToGradeMap: combined)
+        var result = Self(elementToGradeMap: grades)
+        result.formUnion(other, method: method)
+        return result
     }
     
     public func difference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) -> Self {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        return .init(elementToGradeMap: combined)
+        var result = Self(elementToGradeMap: grades)
+        result.formDifference(other, method: method)
+        return result
     }
     
     public func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) -> Self {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        return .init(elementToGradeMap: combined)
+        var result = Self(elementToGradeMap: grades)
+        result.formSymmetricDifference(other, method: method)
+        return result
     }
     
     public func power(_ n: Double) -> Self {
@@ -80,23 +84,19 @@ public extension DiscreteMutableFuzzySet {
     }
     
     mutating func formIntersection(_ other: Self, method: TNormFunction = .minimum) {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        grades = combined
+        applyFunction(method.function, whenMergingWith: other.grades)
     }
     
-    mutating func formIntersection(_ other: Self, method: SNormFunction = .maximum) {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        grades = combined
+    mutating func formUnion(_ other: Self, method: SNormFunction = .maximum) {
+        applyFunction(method.function, whenMergingWith: other.grades)
     }
     
     mutating func formDifference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        grades = combined
+        applyFunction(method.function, whenMergingWith: other.grades)
     }
     
     mutating func formSymmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) {
-        let combined = grades.merging(other.grades, uniquingKeysWith: method.function)
-        grades = combined
+        applyFunction(method.function, whenMergingWith: other.grades)
     }
     
     mutating func applyPower(_ n: Double) {
@@ -128,5 +128,9 @@ private extension DiscreteMutableFuzzySet {
         }
         let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
         grades = newMap
+    }
+    
+    mutating func applyFunction(_ function: (Grade, Grade) -> Grade, whenMergingWith anotherDictionary: [Universe: Grade]) {
+        grades.merge(anotherDictionary, uniquingKeysWith: function)
     }
 }
