@@ -104,6 +104,32 @@ public extension DiscreteMutableFuzzySet {
     }
 }
 
+// MARK: - Properties
+
+public extension DiscreteMutableFuzzySet {
+    var support: Set<Universe> {
+        let elements = grades
+            .filter { $0.value > 0 }
+            .map { $0.key }
+        return Set(elements)
+    }
+    
+    var core: Set<Universe> {
+        let elements = grades
+            .filter { $0.value == 1 }
+            .map { $0.key }
+        return Set(elements)
+    }
+    
+    var height: Grade {
+        grades.values.max() ?? 0
+    }
+    
+    var isNormal: Bool {
+        grades.values.contains { $0 == 1 }
+    }
+}
+
 // MARK: - From crisp set
 public extension DiscreteMutableFuzzySet {
     static func fromCrispSet(_ set: Set<Universe>) -> Self {

@@ -89,6 +89,34 @@ extension IterableFuzzySet: Sequence {
     }
 }
 
+// MARK: - Properties
+
+public extension IterableFuzzySet {
+    var height: Grade {
+        sequence.map(grade(forElement:)).max() ?? 0
+    }
+    
+    var isNormal: Bool {
+        sequence.map(grade(forElement:)).contains { $0 == 1 }
+    }
+}
+
+public extension IterableFuzzySet where Universe: Hashable {
+    var support: Set<Universe> {
+        let elements = self
+            .filter { $0.grade > 0 }
+            .map { $0.element }
+        return Set(elements)
+    }
+    
+    var core: Set<Universe> {
+        let elements = self
+            .filter { $0.grade == 1 }
+            .map { $0.element }
+        return Set(elements)
+    }
+}
+
 // MARK: - Utility
 
 extension IterableFuzzySet.Element: Equatable where Universe: Equatable {}
