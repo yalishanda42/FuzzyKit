@@ -13,6 +13,6 @@ public protocol FuzzyNumber {
     prefix static func - (x: Self) -> Self
     
 //    func approximatelyMultiplied(by other: Self) -> Self
-//    
+//
 //    func approximatelyDivided(by other: Self) -> Self
 }
