@@ -35,6 +35,20 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
         }
     }
     
+    func test_stringRepr_noZeroes() {
+        let parameters = [
+            "a": 0.69,
+            "b": 1,
+        ]
+        let sut = DiscreteMutableFuzzySet(elementToGradeMap: parameters)
+        let expected1 = "{0.69/a, 1.0/b}"
+        let expected2 = "{1.0/b, 0.69/a}"
+        
+        let result = String(describing: sut)
+        
+        XCTAssert([expected1, expected2].contains(result))
+    }
+    
     func test_setGrade_gradesAreCorrect() throws {
         var sut1 = DiscreteMutableFuzzySet<String>()
         var sut2 = DiscreteMutableFuzzySet<String>()

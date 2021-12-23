@@ -145,6 +145,17 @@ public extension Set {
     }
 }
 
+// MARK: - Debug
+
+extension DiscreteMutableFuzzySet: CustomStringConvertible {
+    public var description: String {
+        let guts = grades.map {
+            "\($0.value)/\($0.key)"
+        }.joined(separator: ", ")
+        return "{\(guts)}"
+    }
+}
+
 // MARK: - Helpers
 
 private extension DiscreteMutableFuzzySet {
