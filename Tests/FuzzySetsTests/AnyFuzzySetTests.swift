@@ -1,5 +1,5 @@
 import XCTest
-import FuzzyKit
+import FuzzySets
 
 final class AnyFuzzySetTests: XCTestCase {
     func test_initFromDiscreteMutableFuzzySet() {

@@ -1,5 +1,5 @@
 import XCTest
-import FuzzyKit
+import FuzzySets
 
 final class MembershipFunctionTests: XCTestCase {
     func test_isCallable() throws {

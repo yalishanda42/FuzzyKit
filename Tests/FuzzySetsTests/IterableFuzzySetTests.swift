@@ -1,5 +1,5 @@
 import XCTest
-import FuzzyKit
+import FuzzySets
 
 class IterableFuzzySetTests: XCTestCase {
     private var near4Support4: [IterableFuzzySet<Int, StrideThrough<Int>>.Element] = [

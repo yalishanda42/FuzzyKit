@@ -3,12 +3,30 @@
 
 import PackageDescription
 
+enum SubmoduleName: String {
+    case fuzzyKit = "FuzzyKit"
+    case fuzzySets = "FuzzySets"
+    case fuzzyNumbers = "FuzzyNumbers"
+    
+    var name: String { rawValue }
+    var target: String { rawValue }
+    var testTarget: String { rawValue + "Tests" }
+}
+
 let package = Package(
     name: "FuzzyKit",
     products: [
         .library(
-            name: "FuzzyKit",
-            targets: ["FuzzyKit"]
+            name: SubmoduleName.fuzzyKit.name,
+            targets: [SubmoduleName.fuzzyKit.target]
+        ),
+        .library(
+            name: SubmoduleName.fuzzySets.name,
+            targets: [SubmoduleName.fuzzySets.target]
+        ),
+        .library(
+            name: SubmoduleName.fuzzyNumbers.name,
+            targets: [SubmoduleName.fuzzyNumbers.target]
         ),
     ],
     dependencies: [
@@ -16,14 +34,35 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FuzzyKit",
+            name: SubmoduleName.fuzzyKit.target,
+            dependencies: [
+                .target(name: SubmoduleName.fuzzySets.target),
+                .target(name: SubmoduleName.fuzzyNumbers.target),
+            ]
+        ),
+        .target(
+            name: SubmoduleName.fuzzySets.target,
             dependencies: [
                 .product(name: "RealModule", package: "swift-numerics"),
             ]
         ),
         .testTarget(
-            name: "FuzzyKitTests",
-            dependencies: ["FuzzyKit"]
+            name: SubmoduleName.fuzzySets.testTarget,
+            dependencies: [
+                .target(name: SubmoduleName.fuzzySets.target)
+            ]
+        ),
+        .target(
+            name: SubmoduleName.fuzzyNumbers.target,
+            dependencies: [
+                .target(name: SubmoduleName.fuzzySets.target),
+            ]
+        ),
+        .testTarget(
+            name: SubmoduleName.fuzzyNumbers.testTarget,
+            dependencies: [
+                .target(name: SubmoduleName.fuzzyNumbers.target),
+            ]
         ),
     ]
 )
