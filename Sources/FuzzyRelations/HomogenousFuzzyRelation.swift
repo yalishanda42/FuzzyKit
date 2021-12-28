@@ -1,6 +1,6 @@
 import FuzzySets
 
-class HomogenousFuzzyRelation<U> {
+public struct HomogenousFuzzyRelation<U> {
     
     let function: MembershipFunction<[U]>
     

@@ -1,6 +1,6 @@
 import FuzzySets
 
-public class BinaryFuzzyRelation<U, V> {
+public struct BinaryFuzzyRelation<U, V> {
     
     let function: MembershipFunction<(U, V)>
     

@@ -1,6 +1,6 @@
 import FuzzySets
 
-public class BinaryCartesianProduct<A: FuzzySet, B: FuzzySet, U, V>
+public struct BinaryCartesianProduct<A: FuzzySet, B: FuzzySet, U, V>
 where A.Universe == U, B.Universe == V {
     
     let first: A

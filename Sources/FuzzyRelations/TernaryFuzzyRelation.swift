@@ -1,6 +1,6 @@
 import FuzzySets
 
-public class TernaryFuzzyRelation<U, V, W> {
+public struct TernaryFuzzyRelation<U, V, W> {
     
     let function: MembershipFunction<(U, V, W)>
     

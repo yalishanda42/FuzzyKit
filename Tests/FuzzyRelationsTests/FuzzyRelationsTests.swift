@@ -83,4 +83,66 @@ final class FuzzyRelationsTests: XCTestCase {
             XCTAssertApproximatelyEqual(grade, sut.grade(forElement: elements))
         }
     }
+    
+    func test_fuzzySetComposition() {
+        let fs = DiscreteMutableFuzzySet([
+            1: 0.2,
+            2: 1,
+            3: 0.2,
+        ]).makeIterable()
+        
+        let fr = BinaryFuzzyRelation { (a: Int, b: Int) -> Grade in
+            switch abs(a - b) {
+            case 0: return 1
+            case 1: return 0.8
+            case 2: return 0.3
+            default: return 0
+            }
+        }
+        
+        let expected = [
+            1: 0.8,
+            2: 1,
+            3: 0.8,
+        ]
+        
+        let sut = FuzzySetComposition(set: fs, relation: fr)
+        
+        for (element, grade) in expected {
+            XCTAssertApproximatelyEqual(grade, sut.grade(forElement: element))
+            XCTAssertApproximatelyEqual(grade, sut[element])
+        }
+    }
+    
+    func test_fuzzyRelationsComposition() {
+        let rel1 = BinaryFuzzyRelation { (a: Int, b: Int) -> Grade in
+            let matrix = [
+                [0.7, 0.6],
+                [0.8, 0.3],
+            ]
+            return matrix[a][b]
+        }
+        
+        let rel2 = BinaryFuzzyRelation { (a: Int, b: Int) -> Grade in
+            let matrix = [
+                [0.8, 0.5, 0.4],
+                [0.1, 0.6, 0.7],
+            ]
+            return matrix[a][b]
+        }
+        
+        let expected = [
+            [0.7, 0.6, 0.6],
+            [0.8, 0.5, 0.4],
+        ]
+        
+        let sut = FuzzyRelationsComposition(rel1, rel2, sequence: [0, 1])
+        
+        for x in [0, 1] {
+            for z in [0, 1, 2] {
+                XCTAssertApproximatelyEqual(expected[x][z], sut.grade(forElement: (x, z)))
+                XCTAssertApproximatelyEqual(expected[x][z], sut[x, z])
+            }
+        }
+    }
 }
