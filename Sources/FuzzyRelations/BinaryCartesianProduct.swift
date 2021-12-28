@@ -24,16 +24,20 @@ where A.Universe == U, B.Universe == V {
         self.second = b
         self.function = .init(membershipFunction)
     }
-    
-    public func grade(forElements elements: (U, V)) -> Grade {
-        function(elements)
+}
+
+extension BinaryCartesianProduct: FuzzySet {
+    public func grade(forElement element: (U, V)) -> Grade {
+        function(element)
     }
         
     public subscript(_ u: U, _ v: V) -> Grade {
-        grade(forElements: (u, v))
+        grade(forElement: (u, v))
     }
-    
-    public func asFuzzySet() -> AnyFuzzySet<(U, V)> {
+}
+
+extension BinaryCartesianProduct: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<(U, V)> {
         .init(membershipFunction: function)
     }
 }

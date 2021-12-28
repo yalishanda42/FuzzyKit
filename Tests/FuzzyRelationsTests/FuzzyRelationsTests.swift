@@ -4,12 +4,12 @@ import FuzzySets
 
 final class FuzzyRelationsTests: XCTestCase {
     func test_cartesianProduct_discreteSets() {
-        let fs1 = DiscreteMutableFuzzySet(elementToGradeMap: [
+        let fs1 = DiscreteMutableFuzzySet([
             "a1": 1,
             "a2": 0.6,
             "a3": 0.3,
         ])
-        let fs2 = DiscreteMutableFuzzySet(elementToGradeMap: [
+        let fs2 = DiscreteMutableFuzzySet([
             "b1": 0.6,
             "b2": 0.9,
             "b3": 0.1,
@@ -41,7 +41,7 @@ final class FuzzyRelationsTests: XCTestCase {
         
         for (elements, grade) in zip(expectedTuples, expectedGrades) {
             XCTAssertApproximatelyEqual(grade, sut[elements.0, elements.1])
-            XCTAssertApproximatelyEqual(grade, sut.grade(forElements: elements))
+            XCTAssertApproximatelyEqual(grade, sut.grade(forElement: elements))
         }
     }
     
@@ -80,7 +80,7 @@ final class FuzzyRelationsTests: XCTestCase {
         
         for (elements, grade) in zip(expectedTuples, expectedGrades) {
             XCTAssertApproximatelyEqual(grade, sut[elements.0, elements.1])
-            XCTAssertApproximatelyEqual(grade, sut.grade(forElements: elements))
+            XCTAssertApproximatelyEqual(grade, sut.grade(forElement: elements))
         }
     }
 }

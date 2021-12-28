@@ -1,6 +1,6 @@
 import RealModule
 
-public struct AnyFuzzySet<Universe>: FuzzySet {
+public struct AnyFuzzySet<Universe> {
     internal let membershipFunction: MembershipFunction<Universe>
     
     public init(membershipFunction: MembershipFunction<Universe>) {
@@ -10,11 +10,19 @@ public struct AnyFuzzySet<Universe>: FuzzySet {
     public init(membershipFunction: @escaping MembershipFunction<Universe>.FunctionType) {
         self.membershipFunction = MembershipFunction(membershipFunction)
     }
-    
+}
+
+// MARK: - Fuzzy set
+
+extension AnyFuzzySet: FuzzySet {
     public func grade(forElement element: Universe) -> Grade {
         membershipFunction(element)
     }
-    
+}
+
+// MARK: - Fuzzy set operations
+
+extension AnyFuzzySet: FuzzySetOperations {
     public func alphaCut(_ alpha: Grade) -> Self {
         .init { max(membershipFunction($0), alpha) }
     }
@@ -56,16 +64,34 @@ public extension AnyFuzzySet {
     }
 }
 
+// MARK: - From crisp set
+
+public extension AnyFuzzySet where Universe: Hashable {
+    static func fromCrispSet(_ set: Set<Universe>) -> Self {
+        .init(membershipFunction: .fromCrispSet(set))
+    }
+}
+
 // MARK: - Type erasure
 
-public extension DiscreteMutableFuzzySet {
-    func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
+public protocol AnyFuzzySetRepresentable: FuzzySet {
+    func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe>
+}
+
+extension AnyFuzzySet {
+    public init<FS: AnyFuzzySetRepresentable>(_ fuzzySet: FS) where FS.Universe == Universe {
+        self = fuzzySet.eraseToAnyFuzzySet()
+    }
+}
+
+extension DiscreteMutableFuzzySet: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
         .init(membershipFunction: .fromDictionary(grades))
     }
 }
 
-public extension IterableFuzzySet {
-    func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
+extension IterableFuzzySet: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
         .init(membershipFunction: function)
     }
 }

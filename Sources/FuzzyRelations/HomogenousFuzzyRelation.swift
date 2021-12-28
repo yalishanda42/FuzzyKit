@@ -11,20 +11,20 @@ class HomogenousFuzzyRelation<U> {
     public init(_ membershipFunction: @escaping MembershipFunction<[U]>.FunctionType) {
         self.function = .init(membershipFunction)
     }
-    
-    public func grade(forElements elements: [U]) -> Grade {
-        function(elements)
+}
+
+extension HomogenousFuzzyRelation: FuzzySet {
+    public func grade(forElement element: [U]) -> Grade {
+        function(element)
     }
         
     public subscript(_ u: U...) -> Grade {
-        grade(forElements: u)
+        grade(forElement: u)
     }
-        
-    public subscript(_ u: [U]) -> Grade {
-        grade(forElements: u)
-    }
-    
-    public func asFuzzySet() -> AnyFuzzySet<[U]> {
+}
+
+extension HomogenousFuzzyRelation: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<[U]> {
         .init(membershipFunction: function)
     }
 }

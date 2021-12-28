@@ -22,7 +22,7 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             "c": 1.0,
         ]
         
-        let sut = DiscreteMutableFuzzySet(elementToGradeMap: parameters)
+        let sut = DiscreteMutableFuzzySet(parameters)
         
         let expected = [
             "a": 0.69,
@@ -40,9 +40,9 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             "a": 0.69,
             "b": 1,
         ]
-        let sut = DiscreteMutableFuzzySet(elementToGradeMap: parameters)
-        let expected1 = "{0.69/a, 1.0/b}"
-        let expected2 = "{1.0/b, 0.69/a}"
+        let sut = DiscreteMutableFuzzySet(parameters)
+        let expected1 = "<FuzzySet: {0.69/a, 1.0/b}, other values == 0.0>"
+        let expected2 = "<FuzzySet: {1.0/b, 0.69/a}, other values == 0.0>"
         
         let result = String(describing: sut)
         
@@ -86,12 +86,10 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             "": 0.0,
         ]
         
-        let fs1 = cs.fuzzified()
-        let fs2 = DiscreteMutableFuzzySet.fromCrispSet(cs)
+        let sut = DiscreteMutableFuzzySet.fromCrispSet(cs)
         
         for (element, grade) in expected {
-            assertExpectedGrade(element: element, expectedGrade: grade, sut: fs1)
-            assertExpectedGrade(element: element, expectedGrade: grade, sut: fs2)
+            assertExpectedGrade(element: element, expectedGrade: grade, sut: sut)
         }
     }
     
@@ -114,8 +112,8 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             "f": 0.5,
         ]
         
-        let set = DiscreteMutableFuzzySet(elementToGradeMap: initial)
-        var sut2 = DiscreteMutableFuzzySet(elementToGradeMap: initial)
+        let set = DiscreteMutableFuzzySet(initial)
+        var sut2 = DiscreteMutableFuzzySet(initial)
         
         let sut1 = set.alphaCut(alpha)
         sut2.applyAlphaCut(alpha)
@@ -143,7 +141,7 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             "e": 0.999,
             "f": 1.0,
         ]
-        let set = DiscreteMutableFuzzySet(elementToGradeMap: initial)
+        let set = DiscreteMutableFuzzySet(initial)
         
         let sut = set.complement()
         

@@ -11,20 +11,20 @@ public class TernaryFuzzyRelation<U, V, W> {
     public init(_ membershipFunction: @escaping MembershipFunction<(U, V, W)>.FunctionType) {
         self.function = .init(membershipFunction)
     }
-    
-    public func grade(forElements elements: (U, V, W)) -> Grade {
-        function(elements)
+}
+
+extension TernaryFuzzyRelation: FuzzySet {
+    public func grade(forElement element: (U, V, W)) -> Grade {
+        function(element)
     }
         
     public subscript(_ u: U, _ v: V, _ w: W) -> Grade {
-        grade(forElements: (u, v, w))
+        grade(forElement: (u, v, w))
     }
-    
-    public subscript(_ x: (U, V, W)) -> Grade {
-        grade(forElements: x)
-    }
-    
-    public func asFuzzySet() -> AnyFuzzySet<(U, V, W)> {
+}
+ 
+extension TernaryFuzzyRelation: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<(U, V, W)> {
         .init(membershipFunction: function)
     }
 }

@@ -11,20 +11,20 @@ public class BinaryFuzzyRelation<U, V> {
     public init(_ membershipFunction: @escaping MembershipFunction<(U, V)>.FunctionType) {
         self.function = .init(membershipFunction)
     }
-    
-    public func grade(forElements elements: (U, V)) -> Grade {
+}
+
+extension BinaryFuzzyRelation: FuzzySet {
+    public func grade(forElement elements: (U, V)) -> Grade {
         function(elements)
     }
         
     public subscript(_ u: U, _ v: V) -> Grade {
-        grade(forElements: (u, v))
+        grade(forElement: (u, v))
     }
-        
-    public subscript(_ x: (U, V)) -> Grade {
-        grade(forElements: x)
-    }
-    
-    public func asFuzzySet() -> AnyFuzzySet<(U, V)> {
+}
+
+extension BinaryFuzzyRelation: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<(U, V)> {
         .init(membershipFunction: function)
     }
 }

@@ -26,12 +26,17 @@ public struct IterableFuzzySet<Universe, S: Sequence> where S.Element == Univers
     }
 }
 
-// MARK: - FuzzySet conformance
+// MARK: - Fuzzy set
 
 extension IterableFuzzySet: FuzzySet {
     public func grade(forElement element: Universe) -> Grade {
         function(element)
     }
+}
+
+// MARK: - Fuzzy set operations
+
+extension IterableFuzzySet: FuzzySetOperations {
     
     public func alphaCut(_ alpha: Grade) -> Self {
         .init(sequence) {
@@ -76,7 +81,7 @@ extension IterableFuzzySet: FuzzySet {
     }
 }
 
-// MARK: - Sequence conformance
+// MARK: - Sequence
 
 extension IterableFuzzySet: Sequence {
     public func makeIterator() -> Iterator {
@@ -114,6 +119,14 @@ public extension IterableFuzzySet where Universe: Hashable {
             .filter { $0.grade == 1 }
             .map { $0.element }
         return Set(elements)
+    }
+}
+
+// MARK: - From crisp set
+
+public extension IterableFuzzySet where S == Set<Universe> {
+    static func fromCrispSet(_ set: S) -> Self {
+        .init(set, membershipFunction: .one)
     }
 }
 

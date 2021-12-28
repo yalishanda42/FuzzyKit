@@ -12,7 +12,7 @@ final class AnyFuzzySetTests: XCTestCase {
             "f": 0.0,
         ]
         
-        let set = DiscreteMutableFuzzySet(elementToGradeMap: expected)
+        let set = DiscreteMutableFuzzySet(expected)
         
         let sut = set.eraseToAnyFuzzySet()
         
