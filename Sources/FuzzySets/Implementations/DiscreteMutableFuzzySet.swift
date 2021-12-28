@@ -22,43 +22,43 @@ extension DiscreteMutableFuzzySet: FuzzySet {
 
 extension DiscreteMutableFuzzySet: FuzzySetOperations {
     public func alphaCut(_ alpha: Grade) -> Self {
-        var result = Self(grades, defaultGrade: defaultGrade)
+        var result = self
         result.applyAlphaCut(alpha)
         return result
     }
     
     public func complement(method: ComplementFunction = .standard) -> Self {
-        var result = Self(grades, defaultGrade: defaultGrade)
+        var result = self
         result.formComplement(method: method)
         return result
     }
     
     public func intersection(_ other: Self, method: TNormFunction = .minimum) -> Self {
-        var result = Self(grades, defaultGrade: defaultGrade)
+        var result = self
         result.formIntersection(other, method: method)
         return result
     }
     
     public func union(_ other: Self, method: SNormFunction) -> Self {
-        var result = Self(grades, defaultGrade: defaultGrade)
+        var result = self
         result.formUnion(other, method: method)
         return result
     }
     
     public func difference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) -> Self {
-        var result = Self(grades, defaultGrade: defaultGrade)
+        var result = self
         result.formDifference(other, method: method)
         return result
     }
     
     public func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) -> Self {
-        var result = Self(grades, defaultGrade: defaultGrade)
+        var result = self
         result.formSymmetricDifference(other, method: method)
         return result
     }
     
     public func power(_ n: Double) -> Self {
-        var result = Self(grades, defaultGrade: defaultGrade)
+        var result = self
         result.applyPower(n)
         return result
     }
@@ -91,19 +91,19 @@ public extension DiscreteMutableFuzzySet {
     }
     
     mutating func formIntersection(_ other: Self, method: TNormFunction = .minimum) {
-        applyFunction(method.function, whenMergingWith: other.grades, otherDefaultGrade: other.defaultGrade)
+        applyFunction(method.function, whenMergingWith: other)
     }
     
     mutating func formUnion(_ other: Self, method: SNormFunction = .maximum) {
-        applyFunction(method.function, whenMergingWith: other.grades, otherDefaultGrade: other.defaultGrade)
+        applyFunction(method.function, whenMergingWith: other)
     }
     
     mutating func formDifference(_ other: Self, method: DifferenceFunction = .tNormAndComplement(.minimum, .standard)) {
-        applyFunction(method.function, whenMergingWith: other.grades, otherDefaultGrade: other.defaultGrade)
+        applyFunction(method.function, whenMergingWith: other)
     }
     
     mutating func formSymmetricDifference(_ other: Self, method: SymmetricDifferenceFunction = .absoluteValue) {
-        applyFunction(method.function, whenMergingWith: other.grades, otherDefaultGrade: other.defaultGrade)
+        applyFunction(method.function, whenMergingWith: other)
     }
     
     mutating func applyPower(_ n: Double) {
@@ -168,8 +168,8 @@ extension DiscreteMutableFuzzySet: CustomStringConvertible {
 
 // MARK: - Helpers
 
-private extension DiscreteMutableFuzzySet {
-    mutating func applyFunction(_ function: (Grade) -> Grade) {
+extension DiscreteMutableFuzzySet {
+    public mutating func applyFunction(_ function: (Grade) -> Grade) {
         let newGradeTuples = grades.map {
             ($0.key, function($0.value))
         }
@@ -179,17 +179,16 @@ private extension DiscreteMutableFuzzySet {
         sanitize()
     }
     
-    mutating func applyFunction(
+    public mutating func applyFunction(
         _ function: (Grade, Grade) -> Grade,
-        whenMergingWith anotherDictionary: [Universe: Grade],
-        otherDefaultGrade: Grade
+        whenMergingWith anotherSet: Self
     ) {
-        grades.merge(anotherDictionary, uniquingKeysWith: function)
-        defaultGrade = function(defaultGrade, otherDefaultGrade)
+        grades.merge(anotherSet.grades, uniquingKeysWith: function)
+        defaultGrade = function(defaultGrade, anotherSet.defaultGrade)
         sanitize()
     }
     
-    mutating func sanitize() {
+    private mutating func sanitize() {
         grades = grades.filter {
             $0.value != defaultGrade
         }

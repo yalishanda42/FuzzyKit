@@ -12,7 +12,7 @@ public struct IterableFuzzySet<Universe, S: Sequence> where S.Element == Univers
     
     public typealias Iterator = Array<Element>.Iterator
     
-    internal let sequence: S
+    public let sequence: S
     internal let function: MembershipFunction<Universe>
     
     public init(_ sequence: S, membershipFunction: MembershipFunction<Universe>) {

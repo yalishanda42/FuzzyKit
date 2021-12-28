@@ -8,6 +8,7 @@ enum SubmoduleName: String {
     case fuzzySets = "FuzzySets"
     case fuzzyNumbers = "FuzzyNumbers"
     case fuzzyRelations = "FuzzyRelations"
+    case fuzzyLogic = "FuzzyLogic"
     
     var name: String { rawValue }
     var target: String { rawValue }
@@ -75,6 +76,12 @@ let package = Package(
             name: SubmoduleName.fuzzyRelations.testTarget,
             dependencies: [
                 .target(name: SubmoduleName.fuzzyRelations.target),
+                .target(name: SubmoduleName.fuzzySets.target),
+            ]
+        ),
+        .target(
+            name: SubmoduleName.fuzzyLogic.target,
+            dependencies: [
                 .target(name: SubmoduleName.fuzzySets.target),
             ]
         ),
