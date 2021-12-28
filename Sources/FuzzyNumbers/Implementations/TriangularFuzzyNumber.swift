@@ -1,6 +1,6 @@
 import FuzzySets
 
-public struct TriangularFuzzyNumber: FuzzyNumber {
+public struct TriangularFuzzyNumber {
     
     public typealias Universe = Double
     
@@ -23,11 +23,15 @@ public struct TriangularFuzzyNumber: FuzzyNumber {
         self.maximum = peak + rightInterval
         self.function = .triangular(minimum: minimum, peak: peak, maximum: maximum)
     }
-    
-    public func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
-        .init(membershipFunction: function)
+}
+
+extension TriangularFuzzyNumber: FuzzySet {
+    public func grade(forElement element: Universe) -> Grade {
+        function(element)
     }
-    
+}
+
+extension TriangularFuzzyNumber: FuzzyNumber {
     public static func + (lhs: TriangularFuzzyNumber, rhs: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
         .init(
             minimum: lhs.minimum + rhs.minimum,
@@ -56,6 +60,12 @@ public struct TriangularFuzzyNumber: FuzzyNumber {
 //    public func approximatelyDivided(by other: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
 //        // TODO
 //    }
+}
+
+extension  TriangularFuzzyNumber: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe> {
+        .init(membershipFunction: function)
+    }
 }
 
 extension TriangularFuzzyNumber: Equatable {

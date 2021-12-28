@@ -1,10 +1,6 @@
 import FuzzySets
 
-public protocol FuzzyNumber {
-    
-    typealias Universe = Double
-    
-    func eraseToAnyFuzzySet() -> AnyFuzzySet<Universe>
+public protocol FuzzyNumber: FuzzySet where Universe == Double {
     
     static func + (lhs: Self, rhs: Self) -> Self
     
