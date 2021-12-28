@@ -2,3 +2,4 @@
 
 @_exported import FuzzySets
 @_exported import FuzzyNumbers
+@_exported import FuzzyRelations
