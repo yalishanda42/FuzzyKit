@@ -8,7 +8,17 @@ public extension BinaryFuzzyRelation {
         method: ImplicationMethod = .mamdani
     ) -> Self where P.Universe == U, Q.Universe == V {
         .init {
-            method.function(antecedent[$0.0], consequent[$0.1])
+            (antecedent --> consequent)
+                .apply($0.0, $0.1, method: method)
+        }
+    }
+    
+    static func implication<P: FuzzySet, Q: FuzzySet>(
+        rule: FuzzyRule<P, Q>,
+        method: ImplicationMethod = .mamdani
+    ) -> Self where P.Universe == U, Q.Universe == V {
+        .init {
+            rule.apply($0.0, $0.1, method: method)
         }
     }
 }
