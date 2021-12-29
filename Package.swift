@@ -30,6 +30,14 @@ let package = Package(
             name: SubmoduleName.fuzzyNumbers.name,
             targets: [SubmoduleName.fuzzyNumbers.target]
         ),
+        .library(
+            name: SubmoduleName.fuzzyRelations.name,
+            targets: [SubmoduleName.fuzzyRelations.target]
+        ),
+        .library(
+            name: SubmoduleName.fuzzyLogic.name,
+            targets: [SubmoduleName.fuzzyLogic.target]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-numerics.git", .upToNextMajor(from: "1.0.0")),
