@@ -96,6 +96,12 @@ extension IterableFuzzySet: Sequence {
 
 // MARK: - Convertions
 
+public extension AnyFuzzySet {
+    func makeIterable<S: Sequence>(over sequence: S) -> IterableFuzzySet<Universe, S> {
+        .init(sequence, membershipFunction: membershipFunction)
+    }
+}
+
 public extension DiscreteMutableFuzzySet {
     func makeIterable() -> IterableFuzzySet<Universe, Dictionary<Universe, Grade>.Keys> {
         .init(grades.keys, membershipFunction: .fromDictionary(grades))
