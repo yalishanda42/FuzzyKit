@@ -36,24 +36,28 @@ public enum ImplicationMethod {
     }
 }
 
-public extension AnyFuzzySet {
-    func implication(_ other: Self, method: ImplicationMethod = .mamdani) -> Self {
+public protocol FuzzyImplicationCapable: FuzzySet {
+    func implication(_ other: Self, method: ImplicationMethod) -> Self
+}
+
+extension AnyFuzzySet: FuzzyImplicationCapable {
+    public func implication(_ other: Self, method: ImplicationMethod = .mamdani) -> Self {
         .init {
             method.function(self[$0], other[$0])
         }
     }
 }
 
-public extension IterableFuzzySet {
-    func implication(_ other: Self, method: ImplicationMethod = .mamdani) -> Self {
+extension IterableFuzzySet: FuzzyImplicationCapable {
+    public func implication(_ other: Self, method: ImplicationMethod = .mamdani) -> Self {
         .init(sequence) {
             method.function(self[$0], other[$0])
         }
     }
 }
 
-public extension DiscreteMutableFuzzySet {
-    func implication(_ other: Self, method: ImplicationMethod = .mamdani) -> Self {
+extension DiscreteMutableFuzzySet: FuzzyImplicationCapable {
+    public func implication(_ other: Self, method: ImplicationMethod = .mamdani) -> Self {
         var result = self
         result.formImplication(other, method: method)
         return result
