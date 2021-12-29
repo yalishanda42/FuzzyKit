@@ -48,6 +48,8 @@ let package = Package(
             dependencies: [
                 .target(name: SubmoduleName.fuzzySets.target),
                 .target(name: SubmoduleName.fuzzyNumbers.target),
+                .target(name: SubmoduleName.fuzzyRelations.target),
+                .target(name: SubmoduleName.fuzzyLogic.target),
             ]
         ),
         .target(
