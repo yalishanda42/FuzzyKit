@@ -47,6 +47,33 @@ class IterableFuzzySetTests: XCTestCase {
         XCTAssertEqual(result, expected)
     }
     
+    func test_initFromCaseIterableEnum_sequenceNotRequired() {
+        enum U: Int, CaseIterable {
+            case a, b, c, d, e, f, g, h, i, j, k
+        }
+        
+        let sut = IterableFuzzySet { (u: U) in
+            Double(u.rawValue) / Double(U.allCases.count)
+        }
+        
+        let sut2 = IterableFuzzySet(membershipFunction: MembershipFunction<U>.one)
+        
+        XCTAssertEqual(Array(sut).map { $0.element }, U.allCases)
+        XCTAssertEqual(Array(sut2).map { $0.element }, U.allCases)
+    }
+    
+    func test_initFromDiscreteMutableWhenCaseIterable_noAmbiguity() {
+        enum U: CaseIterable {
+            case a, b, c, d, e, f, g, h, i, j, k
+        }
+        
+        let fs = DiscreteMutableFuzzySet(.init(uniqueKeysWithValues: U.allCases.map { ($0, 0.42) }))
+        
+        let sut = fs.makeIterable()
+        
+        XCTAssertEqual(Array(sut).map { $0.element }, U.allCases)
+    }
+    
     func test_alphaCut_allValuesAreBelowAlpha() {
         let alpha = 0.5
         let set = IterableFuzzySet(

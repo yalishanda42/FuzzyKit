@@ -26,6 +26,18 @@ public struct IterableFuzzySet<Universe, S: Sequence> where S.Element == Univers
     }
 }
 
+public extension IterableFuzzySet where Universe: CaseIterable, S == Universe.AllCases {
+    init(membershipFunction: MembershipFunction<Universe>) {
+        self.sequence = Universe.allCases
+        self.function = membershipFunction
+    }
+    
+    init(membershipFunction: @escaping MembershipFunction<Universe>.FunctionType) {
+        self.sequence = Universe.allCases
+        self.function = .init(membershipFunction)
+    }
+}
+
 // MARK: - Fuzzy set
 
 extension IterableFuzzySet: FuzzySet {
@@ -102,13 +114,31 @@ public extension AnyFuzzySet {
     }
 }
 
+public extension AnyFuzzySet where Universe: CaseIterable {
+    func makeIterable() -> IterableFuzzySet<Universe, Universe.AllCases> {
+        .init(Universe.allCases, membershipFunction: membershipFunction)
+    }
+}
+
 public extension DiscreteMutableFuzzySet {
     func makeIterable() -> IterableFuzzySet<Universe, Dictionary<Universe, Grade>.Keys> {
         .init(grades.keys, membershipFunction: .fromDictionary(grades))
     }
     
-    func makeIterable<S: Sequence>(_ sequence: S) -> IterableFuzzySet<Universe, S> {
+    func makeIterable<S: Sequence>(over sequence: S) -> IterableFuzzySet<Universe, S> {
         .init(sequence, membershipFunction: .init { self[$0] })
+    }
+}
+
+public extension DiscreteMutableFuzzySet where Universe: CaseIterable {
+    func makeIterable() -> IterableFuzzySet<Universe, Universe.AllCases> {
+        .init(Universe.allCases, membershipFunction: .fromDictionary(grades))
+    }
+}
+
+public extension IterableFuzzySet where Universe: Hashable {
+    func makeDiscreteMutable() -> DiscreteMutableFuzzySet<Universe> {
+        .init(.init(uniqueKeysWithValues: sequence.map { ($0, self[$0]) }))
     }
 }
 

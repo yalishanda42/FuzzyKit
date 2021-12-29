@@ -27,3 +27,9 @@ extension GeneralizedModusPonens: FuzzySet {
         composition[element]
     }
 }
+
+extension GeneralizedModusPonens: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<V> {
+        .init { composition[$0] }
+    }
+}

@@ -26,7 +26,21 @@ public struct FuzzyRelationsComposition<U, V, W, Seq: Sequence> where Seq.Elemen
     }
 }
 
+public extension FuzzyRelationsComposition where V: CaseIterable, Seq == V.AllCases {
+    init(
+        _ relationUV: BinaryFuzzyRelation<U, V>,
+        _ relationVW: BinaryFuzzyRelation<V, W>,
+        method: CompositionMethod = .maxmin
+    ) {
+        self.relationUV = relationUV
+        self.relationVW = relationVW
+        self.sequence = V.allCases
+        self.method = method
+    }
+}
+
 extension FuzzyRelationsComposition: FuzzySet {
+    /// - Complexity: O(*n*) where *n* is the number of elements in `self.sequence` (number of elements of `V` to be iterated over via `Seq`)
     public func grade(forElement element: (U, W)) -> Grade {
         let u = element.0
         let w = element.1
