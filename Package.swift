@@ -96,5 +96,12 @@ let package = Package(
                 .target(name: SubmoduleName.fuzzyRelations.target),
             ]
         ),
+        .testTarget(
+            name: SubmoduleName.fuzzyLogic.testTarget,
+            dependencies: [
+                .target(name: SubmoduleName.fuzzyLogic.target),
+                .target(name: SubmoduleName.fuzzySets.target),
+            ]
+        ),
     ]
 )

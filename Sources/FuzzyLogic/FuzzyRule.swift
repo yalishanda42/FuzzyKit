@@ -16,6 +16,14 @@ public struct FuzzyRule<P: FuzzySet, Q: FuzzySet> {
     ) -> Grade {
         method.function(antecedent[p], consequent[q])
     }
+    
+    public func callAsFunction(
+        _ p: P.Universe,
+        _ q: Q.Universe,
+        method: ImplicationMethod = .mamdani
+    ) -> Grade {
+        apply(p, q, method: method)
+    }
 }
 
 infix operator -->: TernaryPrecedence  // lower than ==, &&, ||, etc
