@@ -174,11 +174,17 @@ public extension IterableFuzzySet where Universe: Hashable {
 
 public extension IterableFuzzySet where S == Set<Universe> {
     static func fromCrispSet(_ set: S) -> Self {
-        .init(set, membershipFunction: .one)
+        .init(set, membershipFunction: .fromCrispSet(set))
     }
 }
 
 // MARK: - Utility
+
+public extension IterableFuzzySet where Universe: Equatable, S == Array<Universe> {
+    static func singleton(_ u: Universe) -> Self {
+        .init([u], membershipFunction: .fuzzySingleton(u))
+    }
+}
 
 extension IterableFuzzySet.Element: Equatable where Universe: Equatable {}
 extension IterableFuzzySet.Element: Hashable where Universe: Hashable {}
