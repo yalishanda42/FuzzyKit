@@ -91,6 +91,12 @@ extension IterableFuzzySet: FuzzySetOperations {
             Double.pow(function($0), n)
         }
     }
+    
+    public func appliedCustomFunction(_ function: @escaping (Grade) -> Grade) -> IterableFuzzySet<Universe, S> {
+        .init(sequence) {
+            function(self.function($0))
+        }
+    }
 }
 
 // MARK: - Sequence

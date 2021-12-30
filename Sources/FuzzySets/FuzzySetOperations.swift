@@ -13,4 +13,6 @@ public protocol FuzzySetOperations: FuzzySet {
     func symmetricDifference(_ other: Self, method: SymmetricDifferenceFunction) -> Self
     
     func power(_ n: Double) -> Self
+    
+    func appliedCustomFunction(_ function: @escaping (Grade) -> Grade) -> Self
 }

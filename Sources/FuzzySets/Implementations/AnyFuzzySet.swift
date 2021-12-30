@@ -48,7 +48,11 @@ extension AnyFuzzySet: FuzzySetOperations {
     }
     
     public func power(_ n: Double) -> Self {
-        return .init { Double.pow(membershipFunction($0), n) }
+        .init { Double.pow(membershipFunction($0), n) }
+    }
+    
+    public func appliedCustomFunction(_ function: @escaping (Grade) -> Grade) -> Self {
+        .init { function(membershipFunction($0)) }
     }
 }
 

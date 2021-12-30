@@ -62,6 +62,12 @@ extension DiscreteMutableFuzzySet: FuzzySetOperations {
         result.applyPower(n)
         return result
     }
+    
+    public func appliedCustomFunction(_ function: @escaping (Grade) -> Grade) -> Self {
+        var result = self
+        result.applyFunction(function)
+        return result
+    }
 }
 
 // MARK: - Mutability
