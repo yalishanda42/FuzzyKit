@@ -63,4 +63,8 @@ extension FuzzyRelationsComposition: FuzzySet {
     public subscript(_ u: U, _ w: W) -> Grade {
         grade(forElement: (u, w))
     }
+    
+    public func callAsFunction(_ u: U, _ w: W) -> Grade {
+        grade(forElement: (u, w))
+    }
 }

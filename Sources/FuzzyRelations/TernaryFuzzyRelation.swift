@@ -21,6 +21,10 @@ extension TernaryFuzzyRelation: FuzzySet {
     public subscript(_ u: U, _ v: V, _ w: W) -> Grade {
         grade(forElement: (u, v, w))
     }
+        
+    public func callAsFunction(_ u: U, _ v: V, _ w: W) -> Grade {
+        grade(forElement: (u, v, w))
+    }
 }
  
 extension TernaryFuzzyRelation: AnyFuzzySetRepresentable {

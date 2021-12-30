@@ -15,4 +15,8 @@ public extension FuzzySet {
             grade(forElement: element)
         }
     }
+    
+    func callAsFunction(_ element: Universe) -> Grade {
+        grade(forElement: element)
+    }
 }

@@ -21,6 +21,7 @@ final class ImplicationTests: XCTestCase {
         
         let sut = bigPressure --> smallVolume
         
-        XCTAssertEqual(sut(4, 1, method: .standardStrict), 1.0)
+        XCTAssertApproximatelyEqual(sut(4, 1), 0.75)
+        XCTAssertApproximatelyEqual(sut(4, 1, method: .standardStrict), 1)
     }
 }

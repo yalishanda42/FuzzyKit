@@ -21,6 +21,10 @@ extension HomogenousFuzzyRelation: FuzzySet {
     public subscript(_ u: U...) -> Grade {
         grade(forElement: u)
     }
+        
+    public func callAsFunction(_ u: U...) -> Grade {
+        grade(forElement: u)
+    }
 }
 
 extension HomogenousFuzzyRelation: AnyFuzzySetRepresentable {

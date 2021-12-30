@@ -10,8 +10,12 @@ func assertExpectedGrade<E, S: FuzzySet>(element: E, expectedGrade: Grade, sut: 
 where S.Universe == E {
     let grade1 = sut[element]
     let grade2 = sut.grade(forElement: element)
+    let grade3 = sut(element)
     
     XCTAssertApproximatelyEqual(grade1, grade2)
+    XCTAssertApproximatelyEqual(grade2, grade3)
+    XCTAssertApproximatelyEqual(grade1, grade3)
     XCTAssertApproximatelyEqual(expectedGrade, grade1)
     XCTAssertApproximatelyEqual(expectedGrade, grade2)
+    XCTAssertApproximatelyEqual(expectedGrade, grade3)
 }

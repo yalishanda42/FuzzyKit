@@ -21,6 +21,10 @@ extension BinaryFuzzyRelation: FuzzySet {
     public subscript(_ u: U, _ v: V) -> Grade {
         grade(forElement: (u, v))
     }
+    
+    public func callAsFunction(_ u: U, _ v: V) -> Grade {
+        grade(forElement: (u, v))
+    }
 }
 
 extension BinaryFuzzyRelation: AnyFuzzySetRepresentable {
