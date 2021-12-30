@@ -18,7 +18,7 @@ public enum TNormFunction {
     
     case custom((Grade, Grade) -> Grade)
     
-    var function: (Grade, Grade) -> Grade {
+    public var function: (Grade, Grade) -> Grade {
         switch self {
         case .minimum:
             return min
@@ -72,7 +72,7 @@ public enum SNormFunction {
     
     case custom((Grade, Grade) -> Grade)
     
-    var function: (Grade, Grade) -> Grade {
+    public var function: (Grade, Grade) -> Grade {
         switch self {
         case .maximum:
             return max
@@ -105,7 +105,7 @@ public enum ComplementFunction {
     
     case custom((Grade) -> Grade)
     
-    var function: (Grade) -> Grade {
+    public var function: (Grade) -> Grade {
         switch self {
         case .standard:
             return { 1 - $0 }
@@ -127,7 +127,7 @@ public enum DifferenceFunction {
     
     case custom((Grade, Grade) -> Grade)
     
-    var function: (Grade, Grade) -> Grade {
+    public var function: (Grade, Grade) -> Grade {
         switch self {
         case .tNormAndComplement(let t, let c):
             return { t.function($0, c.function($1)) }
@@ -145,7 +145,7 @@ public enum SymmetricDifferenceFunction {
     case tNormSNormAndComplement(TNormFunction, SNormFunction, ComplementFunction)
     case custom((Grade, Grade) -> Grade)
     
-    var function: (Grade, Grade) -> Grade {
+    public var function: (Grade, Grade) -> Grade {
         switch self {
         case .absoluteValue:
             return { abs($0 - $1) }

@@ -3,16 +3,16 @@ import FuzzyRelations
 
 public extension FuzzySetComposition {
     static func generalizedModusPonens<P: FuzzySet, Q: FuzzySet>(
-        premiseAntecedent: P,
-        premiseConsequent: Q,
+        antecedent: P,
+        consequent: Q,
         fact: IterableFuzzySet<U, Seq>,
         method: ImplicationMethod = .mamdani
     ) -> Self where P.Universe == U, Q.Universe == V {
          .init(
             set: fact,
             relation: .implication(
-                antecedent: premiseAntecedent,
-                consequent: premiseConsequent,
+                antecedent: antecedent,
+                consequent: consequent,
                 method: method
             )
         )

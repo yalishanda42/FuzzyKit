@@ -1,29 +1,29 @@
 import FuzzySets
 
-public protocol FuzzyStatement {
+public protocol FuzzyProposition {
     associatedtype U
     func apply(_ u: U, settings: OperationSettings) -> Grade
 }
 
-public extension FuzzyStatement {
+public extension FuzzyProposition {
     func callAsFunction(_ u: U, settings: OperationSettings = .init()) -> Grade {
         apply(u, settings: settings)
     }
 }
 
-extension AnyFuzzySet: FuzzyStatement {
+extension AnyFuzzySet: FuzzyProposition {
     public func apply(_ u: Universe, settings: OperationSettings) -> Grade {
         grade(forElement: u)
     }
 }
 
-extension IterableFuzzySet: FuzzyStatement {
+extension IterableFuzzySet: FuzzyProposition {
     public func apply(_ u: Universe, settings: OperationSettings) -> Grade {
         grade(forElement: u)
     }
 }
 
-extension DiscreteMutableFuzzySet: FuzzyStatement {
+extension DiscreteMutableFuzzySet: FuzzyProposition {
     public func apply(_ u: Universe, settings: OperationSettings) -> Grade {
         grade(forElement: u)
     }

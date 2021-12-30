@@ -21,7 +21,3 @@ public struct OperationSettings {
         self.xor = xor
     }
 }
-
-open class ReasoningScheme {
-    // TODO
-}
