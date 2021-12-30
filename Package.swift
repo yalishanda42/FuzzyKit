@@ -100,6 +100,7 @@ let package = Package(
             name: SubmoduleName.fuzzyLogic.testTarget,
             dependencies: [
                 .target(name: SubmoduleName.fuzzyLogic.target),
+                .target(name: SubmoduleName.fuzzyRelations.target),
                 .target(name: SubmoduleName.fuzzySets.target),
             ]
         ),

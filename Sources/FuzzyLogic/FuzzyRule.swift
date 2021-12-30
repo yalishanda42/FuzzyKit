@@ -1,6 +1,6 @@
 import FuzzySets
 
-public struct FuzzyRule<P: FuzzySet, Q: FuzzySet> {
+public struct FuzzyRule<P: FuzzyStatement, Q: FuzzyStatement>: FuzzyStatement {
     public let antecedent: P
     public let consequent: Q
     
@@ -10,23 +10,17 @@ public struct FuzzyRule<P: FuzzySet, Q: FuzzySet> {
     }
     
     public func apply(
-        _ p: P.Universe,
-        _ q: Q.Universe,
-        method: ImplicationMethod = .mamdani
+        _ values: (P.U, Q.U),
+        settings: OperationSettings = .init()
     ) -> Grade {
-        method.function(antecedent[p], consequent[q])
-    }
-    
-    public func callAsFunction(
-        _ p: P.Universe,
-        _ q: Q.Universe,
-        method: ImplicationMethod = .mamdani
-    ) -> Grade {
-        apply(p, q, method: method)
+        settings.implication.function(
+            antecedent(values.0, settings: settings),
+            consequent(values.1, settings: settings)
+        )
     }
 }
 
 infix operator -->: TernaryPrecedence  // lower than ==, &&, ||, etc
-public func --> <P: FuzzySet, Q: FuzzySet> (lhs: P, rhs: Q) -> FuzzyRule<P, Q> {
+public func --> <P: FuzzyStatement, Q: FuzzyStatement> (lhs: P, rhs: Q) -> FuzzyRule<P, Q> {
     .init(antecedent: lhs, consequent: rhs)
 }
