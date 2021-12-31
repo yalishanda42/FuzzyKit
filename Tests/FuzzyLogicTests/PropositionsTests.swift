@@ -1,5 +1,6 @@
 import XCTest
 import FuzzySets
+import FuzzyRelations
 import FuzzyLogic
 
 final class PropositionTests: XCTestCase {
@@ -49,5 +50,44 @@ final class PropositionTests: XCTestCase {
         let result = sut(((.alice, .bob), .bob))
         
         XCTAssertApproximatelyEqual(result, 0.6)
+    }
+    
+    func test_linguisticVariableInOperator_gradesAreCorrect() {
+        enum Temperature { case high }
+        enum Pressure { case low }
+        let highTemperature = DiscreteMutableFuzzySet([
+            20: 0.2,
+            25: 0.4,
+            30: 0.6,
+            35: 0.6,
+            40: 0.7,
+            45: 0.8,
+            50: 0.8,
+        ])
+        let lowPressure = DiscreteMutableFuzzySet([
+            1: 0.8,
+            2: 0.8,
+            3: 0.6,
+            4: 0.4,
+        ])
+        let temperature = LinguisticVariable([
+            Temperature.high: highTemperature
+        ])
+        let pressure = LinguisticVariable([
+            Pressure.low: lowPressure
+        ])
+        
+        let sut = temperature(is: .high) --> pressure(is: .low)
+        let sut2 = temperature.is(.high) --> pressure.is(.low)
+        
+        let expectedRelation = BinaryFuzzyRelation
+            .implication(antecedent: highTemperature, consequent: lowPressure)
+            .eraseToAnyFuzzySet()
+            .makeIterable(over: zip(stride(from: 20, through: 50, by: 5), 1...4))
+        
+        for pair in expectedRelation {
+            XCTAssertApproximatelyEqual(sut(pair.element), pair.grade)
+            XCTAssertApproximatelyEqual(sut2(pair.element), pair.grade)
+        }
     }
 }
