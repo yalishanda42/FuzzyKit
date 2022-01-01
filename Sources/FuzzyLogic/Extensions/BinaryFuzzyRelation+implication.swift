@@ -12,3 +12,9 @@ public extension BinaryFuzzyRelation {
         }
     }
 }
+
+public extension FuzzyRule {
+    func asRelation<P, Q>() -> BinaryFuzzyRelation<P, Q> where Input == (P, Q) {
+        .init { (p, q) in self((p, q)) }
+    }
+}
