@@ -1,11 +1,16 @@
-public struct DiscreteMutableFuzzySet<Universe: Hashable> {
+public struct DiscreteMutableFuzzySet<Universe: Hashable>: ExpressibleByDictionaryLiteral {
     
     public private(set) var grades: [Universe: Grade]
     public private(set) var defaultGrade: Grade
 
-    public init(_ elementToGradeMap: [Universe: Grade] = [:], defaultGrade: Grade = 0) {
+    public init(_ elementToGradeMap: [Universe: Grade], defaultGrade: Grade = 0) {
         self.grades = elementToGradeMap
         self.defaultGrade = defaultGrade
+    }
+    
+    public init(dictionaryLiteral elements: (Universe, Grade)...) {
+        self.grades = .init(uniqueKeysWithValues: elements)
+        self.defaultGrade = 0
     }
 }
 

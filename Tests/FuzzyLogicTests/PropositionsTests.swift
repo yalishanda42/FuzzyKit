@@ -55,7 +55,8 @@ final class PropositionTests: XCTestCase {
     func test_linguisticVariableInOperator_gradesAreCorrect() {
         enum Temperature { case high }
         enum Pressure { case low }
-        let highTemperature = DiscreteMutableFuzzySet([
+        
+        let highTemperature: DiscreteMutableFuzzySet = [
             20: 0.2,
             25: 0.4,
             30: 0.6,
@@ -63,19 +64,20 @@ final class PropositionTests: XCTestCase {
             40: 0.7,
             45: 0.8,
             50: 0.8,
-        ])
-        let lowPressure = DiscreteMutableFuzzySet([
+        ]
+        let lowPressure: DiscreteMutableFuzzySet = [
             1: 0.8,
             2: 0.8,
             3: 0.6,
             4: 0.4,
-        ])
-        let temperature = LinguisticVariable([
+        ]
+        
+        let temperature: SimpleLinguisticVariable = [
             Temperature.high: highTemperature
-        ])
-        let pressure = LinguisticVariable([
+        ]
+        let pressure: SimpleLinguisticVariable = [
             Pressure.low: lowPressure
-        ])
+        ]
         
         let sut = temperature(is: .high) --> pressure(is: .low)
         let sut2 = temperature.is(.high) --> pressure.is(.low)
