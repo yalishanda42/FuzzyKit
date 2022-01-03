@@ -1,0 +1,34 @@
+name: Docs
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  generate:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install tools
+        run: |
+          sudo gem instal jazzy
+          brew install sourcekitten
+
+      - name: Generate docs
+        run: |
+          sourcekitten doc --spm --module-name FuzzySets > mod1.json
+          sourcekitten doc --spm --module-name FuzzyNumbers > mod2.json
+          sourcekitten doc --spm --module-name FuzzyRelations > mod3.json
+          sourcekitten doc --spm --module-name FuzzyLogic > mod4.json
+          jazzy --clean --author "Alexander Ignatov" --sourcekitten-sourcefile mod1.json,mod2.json,mod3.json,mod4.json
+          mkdir docs/Resources && cp Resources/cover.png docs/Resources
+
+      - uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs
+
