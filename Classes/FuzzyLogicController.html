@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FuzzyLogicController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/FuzzyLogicController" class="dashAnchor"></a>
+    <a title="FuzzyLogicController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (7% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        FuzzyLogicController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/FuzzyLogicController.html">FuzzyLogicController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ComplementFunction.html">ComplementFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CompositionMethod.html">CompositionMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DifferenceFunction.html">DifferenceFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ImplicationMethod.html">ImplicationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SNormFunction.html">SNormFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SymmetricDifferenceFunction.html">SymmetricDifferenceFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TNormFunction.html">TNormFunction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic1nopyAA0A8NegationVy5InputQzGxAA0A11PropositionRzlF">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic2aaoiyAA0A11ConjunctionVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic3ssgoiyAA0A4RuleVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">--&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic2xxoiyAA0A3XORVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">^^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic2oooiyAA0A11DisjunctionVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">||(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AnyFuzzySetRepresentable.html">AnyFuzzySetRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzyImplicationCapable.html">FuzzyImplicationCapable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzyNumber.html">FuzzyNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzyProposition.html">FuzzyProposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzySet.html">FuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzySetOperations.html">FuzzySetOperations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LinguisticVariable.html">LinguisticVariable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AnyFuzzySet.html">AnyFuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BinaryCartesianProduct.html">BinaryCartesianProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BinaryFuzzyRelation.html">BinaryFuzzyRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DiscreteMutableFuzzySet.html">DiscreteMutableFuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DynamicLinguisticVariable.html">DynamicLinguisticVariable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyConjunction.html">FuzzyConjunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyDisjunction.html">FuzzyDisjunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyNegation.html">FuzzyNegation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRelationsComposition.html">FuzzyRelationsComposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRule.html">FuzzyRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRuleBase.html">FuzzyRuleBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRuleBase/FuzzyRuleBaseBuilder.html">– FuzzyRuleBaseBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzySetComposition.html">FuzzySetComposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyXOR.html">FuzzyXOR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HomogenousFuzzyRelation.html">HomogenousFuzzyRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IterableFuzzySet/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MembershipFunction.html">MembershipFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ModifiableLinguisticVariable.html">ModifiableLinguisticVariable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OperationSettings.html">OperationSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SimpleLinguisticVariable.html">SimpleLinguisticVariable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TernaryFuzzyRelation.html">TernaryFuzzyRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TriangularFuzzyNumber.html">TriangularFuzzyNumber</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>FuzzyLogicController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">FuzzyLogicController</span><span class="o">&lt;</span><span class="kt">AntecedentUniverse</span><span class="p">,</span> <span class="kt">ConsequentUniverse</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10FuzzyLogic0aB10ControllerC8settingsAA17OperationSettingsVvp"></a>
+                    <a name="//apple_ref/swift/Property/settings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10FuzzyLogic0aB10ControllerC8settingsAA17OperationSettingsVvp">settings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/OperationSettings.html">OperationSettings</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10FuzzyLogic0aB10ControllerC8ruleBaseAA0a4RuleE0Vyx_q_tGvp"></a>
+                    <a name="//apple_ref/swift/Property/ruleBase" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10FuzzyLogic0aB10ControllerC8ruleBaseAA0a4RuleE0Vyx_q_tGvp">ruleBase</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">ruleBase</span><span class="p">:</span> <span class="kt"><a href="../Structs/FuzzyRuleBase.html">FuzzyRuleBase</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">AntecedentUniverse</span><span class="p">,</span> <span class="kt">ConsequentUniverse</span><span class="p">)</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10FuzzyLogic0aB10ControllerC18aggregatorFunctionyS2d_Sdtcvp"></a>
+                    <a name="//apple_ref/swift/Property/aggregatorFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10FuzzyLogic0aB10ControllerC18aggregatorFunctionyS2d_Sdtcvp">aggregatorFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">aggregatorFunction</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">,</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10FuzzyLogic0aB10ControllerC5rules8settings18aggregatorFunctionACyxq_GAA0A8RuleBaseVyx_q_tG_AA17OperationSettingsVS2d_SdtcSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(rules:settings:aggregatorFunction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10FuzzyLogic0aB10ControllerC5rules8settings18aggregatorFunctionACyxq_GAA0A8RuleBaseVyx_q_tG_AA17OperationSettingsVS2d_SdtcSgtcfc">init(rules:<wbr>settings:<wbr>aggregatorFunction:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">rules</span><span class="p">:</span> <span class="kt"><a href="../Structs/FuzzyRuleBase.html">FuzzyRuleBase</a></span><span class="o">&lt;</span><span class="p">(</span><span class="kt">AntecedentUniverse</span><span class="p">,</span> <span class="kt">ConsequentUniverse</span><span class="p">)</span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(),</span>
+    <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/OperationSettings.html">OperationSettings</a></span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(),</span>
+    <span class="nv">aggregatorFunction</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">,</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10FuzzyLogic0aB10ControllerC11consequence9usingFact0A4Sets03AnyA3SetVyq_GAF08IterableaI0Vyxqd__G_t7ElementQyd__RszSTRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/consequence(usingFact:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10FuzzyLogic0aB10ControllerC11consequence9usingFact0A4Sets03AnyA3SetVyq_GAF08IterableaI0Vyxqd__G_t7ElementQyd__RszSTRd__lF">consequence(usingFact:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">consequence</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">Sequence</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">usingFact</span> <span class="nv">fact</span><span class="p">:</span> <span class="kt"><a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a></span><span class="o">&lt;</span><span class="kt">AntecedentUniverse</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AnyFuzzySet.html">AnyFuzzySet</a></span><span class="o">&lt;</span><span class="kt">ConsequentUniverse</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10FuzzyLogic0aB10ControllerC16consequenceGrade3for9usingFactSdq__0A4Sets08IterableA3SetVyxqd__Gt7ElementQyd__RszSTRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/consequenceGrade(for:usingFact:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10FuzzyLogic0aB10ControllerC16consequenceGrade3for9usingFactSdq__0A4Sets08IterableA3SetVyxqd__Gt7ElementQyd__RszSTRd__lF">consequenceGrade(for:<wbr>usingFact:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apply generalized Modus Ponens to all rules using <code>fact</code> as input to the controller and return the grade membership of <code>value</code> in the fuzzy set output.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">consequenceGrade</span><span class="o">&lt;</span><span class="kt">S</span><span class="p">:</span> <span class="kt">Sequence</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="k">for</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">ConsequentUniverse</span><span class="p">,</span>
+    <span class="n">usingFact</span> <span class="nv">fact</span><span class="p">:</span> <span class="kt"><a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a></span><span class="o">&lt;</span><span class="kt">AntecedentUniverse</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10FuzzyLogic0aB10ControllerC16consequenceGrade3for18usingSingletonFactSdq__xtF"></a>
+                    <a name="//apple_ref/swift/Method/consequenceGrade(for:usingSingletonFact:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10FuzzyLogic0aB10ControllerC16consequenceGrade3for18usingSingletonFactSdq__xtF">consequenceGrade(for:<wbr>usingSingletonFact:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apply generalized Modus Ponens to all rules using <code>fact</code> as input to the controller and return the grade membership of <code>value</code> in the fuzzy set output.</p>
+
+<p>Helper for the scenario when <code>AntecedentUniverse</code> does not conform to <code>Equatable</code>.
+One such example might be having a tuple as a universe of discourse - they still do not conform to <code>Equatable</code>, even if all of their elements are <code>Equatable</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">consequenceGrade</span><span class="p">(</span>
+    <span class="k">for</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">ConsequentUniverse</span><span class="p">,</span>
+    <span class="n">usingSingletonFact</span> <span class="nv">fact</span><span class="p">:</span> <span class="kt">AntecedentUniverse</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Alexander Ignatov</a>. All rights reserved. (Last updated: 2022-01-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

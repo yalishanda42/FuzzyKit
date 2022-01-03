@@ -1,0 +1,2371 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/BinaryFuzzyRelation+implication.swift",
+      "line": 5,
+      "symbol": "BinaryFuzzyRelation.implication(antecedent:consequent:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/BinaryFuzzyRelation+implication.swift",
+      "line": 17,
+      "symbol": "FuzzyRule.asRelation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/FuzzyImplicationCapable.swift",
+      "line": 3,
+      "symbol": "FuzzyImplicationCapable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/FuzzyImplicationCapable.swift",
+      "line": 4,
+      "symbol": "FuzzyImplicationCapable.implication(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/FuzzyImplicationCapable.swift",
+      "line": 8,
+      "symbol": "AnyFuzzySet.implication(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/FuzzyImplicationCapable.swift",
+      "line": 16,
+      "symbol": "IterableFuzzySet.implication(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/FuzzyImplicationCapable.swift",
+      "line": 24,
+      "symbol": "DiscreteMutableFuzzySet.implication(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Extensions/FuzzySetComposition+generalizedModusPonens.swift",
+      "line": 5,
+      "symbol": "FuzzySetComposition.generalizedModusPonens(antecedent:consequent:fact:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 10,
+      "symbol": "ImplicationMethod.larsen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 11,
+      "symbol": "ImplicationMethod.lukasiewicz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 12,
+      "symbol": "ImplicationMethod.mamdani",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 13,
+      "symbol": "ImplicationMethod.standardStrict",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 14,
+      "symbol": "ImplicationMethod.goedel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 15,
+      "symbol": "ImplicationMethod.gaines",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 16,
+      "symbol": "ImplicationMethod.kleeneDienes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 17,
+      "symbol": "ImplicationMethod.kleeneDienesLuk",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/ImplicationMethod.swift",
+      "line": 19,
+      "symbol": "ImplicationMethod.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyLogicController.swift",
+      "line": 4,
+      "symbol": "FuzzyLogicController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyLogicController.swift",
+      "line": 6,
+      "symbol": "FuzzyLogicController.settings",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyLogicController.swift",
+      "line": 7,
+      "symbol": "FuzzyLogicController.ruleBase",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyLogicController.swift",
+      "line": 8,
+      "symbol": "FuzzyLogicController.aggregatorFunction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyLogicController.swift",
+      "line": 10,
+      "symbol": "FuzzyLogicController.init(rules:settings:aggregatorFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyLogicController.swift",
+      "line": 20,
+      "symbol": "FuzzyLogicController.consequence(usingFact:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 3,
+      "symbol": "FuzzyProposition",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 4,
+      "symbol": "FuzzyProposition.Input",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 5,
+      "symbol": "FuzzyProposition.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 8,
+      "symbol": "FuzzyProposition",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 9,
+      "symbol": "FuzzyProposition.callAsFunction(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 15,
+      "symbol": "AnyFuzzySet.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 21,
+      "symbol": "IterableFuzzySet.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyProposition.swift",
+      "line": 27,
+      "symbol": "DiscreteMutableFuzzySet.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 3,
+      "symbol": "FuzzyRuleBase",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 5,
+      "symbol": "FuzzyRuleBase.Rule",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 8,
+      "symbol": "FuzzyRuleBase.FuzzyRuleBaseBuilder",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 9,
+      "symbol": "FuzzyRuleBase.FuzzyRuleBaseBuilder.buildBlock()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 11,
+      "symbol": "FuzzyRuleBase.FuzzyRuleBaseBuilder.buildBlock(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 13,
+      "symbol": "FuzzyRuleBase.FuzzyRuleBaseBuilder.buildOptional(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 17,
+      "symbol": "FuzzyRuleBase.FuzzyRuleBaseBuilder.buildEither(first:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 21,
+      "symbol": "FuzzyRuleBase.FuzzyRuleBaseBuilder.buildEither(second:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 25,
+      "symbol": "FuzzyRuleBase.FuzzyRuleBaseBuilder.buildArray(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 30,
+      "symbol": "FuzzyRuleBase.rules",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 32,
+      "symbol": "FuzzyRuleBase.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 36,
+      "symbol": "FuzzyRuleBase.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/FuzzyRuleBase.swift",
+      "line": 41,
+      "symbol": "FuzzyRuleBase",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/OperationSettings.swift",
+      "line": 3,
+      "symbol": "OperationSettings",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/OperationSettings.swift",
+      "line": 4,
+      "symbol": "OperationSettings.negation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/OperationSettings.swift",
+      "line": 5,
+      "symbol": "OperationSettings.implication",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/OperationSettings.swift",
+      "line": 6,
+      "symbol": "OperationSettings.conjunction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/OperationSettings.swift",
+      "line": 7,
+      "symbol": "OperationSettings.disjunction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/OperationSettings.swift",
+      "line": 8,
+      "symbol": "OperationSettings.xor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/OperationSettings.swift",
+      "line": 10,
+      "symbol": "OperationSettings.init(negation:implication:conjunction:disjunction:xor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyConjunction.swift",
+      "line": 3,
+      "symbol": "FuzzyConjunction",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyConjunction.swift",
+      "line": 7,
+      "symbol": "FuzzyConjunction.init(lhs:rhs:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyConjunction.swift",
+      "line": 16,
+      "symbol": "FuzzyConjunction.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyConjunction.swift",
+      "line": 21,
+      "symbol": "&&(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyDisjunction.swift",
+      "line": 3,
+      "symbol": "FuzzyDisjunction",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyDisjunction.swift",
+      "line": 7,
+      "symbol": "FuzzyDisjunction.init(lhs:rhs:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyDisjunction.swift",
+      "line": 16,
+      "symbol": "FuzzyDisjunction.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyDisjunction.swift",
+      "line": 21,
+      "symbol": "||(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyNegation.swift",
+      "line": 3,
+      "symbol": "FuzzyNegation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyNegation.swift",
+      "line": 5,
+      "symbol": "FuzzyNegation.function",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyNegation.swift",
+      "line": 7,
+      "symbol": "FuzzyNegation.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyNegation.swift",
+      "line": 13,
+      "symbol": "FuzzyNegation.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyNegation.swift",
+      "line": 19,
+      "symbol": "!(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyRule.swift",
+      "line": 3,
+      "symbol": "FuzzyRule",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyRule.swift",
+      "line": 7,
+      "symbol": "FuzzyRule.init(antecedent:consequent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyRule.swift",
+      "line": 16,
+      "symbol": "FuzzyRule",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyRule.swift",
+      "line": 16,
+      "symbol": "FuzzyRule.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyRule.swift",
+      "line": 22,
+      "symbol": "-->(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyXOR.swift",
+      "line": 3,
+      "symbol": "FuzzyXOR",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyXOR.swift",
+      "line": 7,
+      "symbol": "FuzzyXOR.init(lhs:rhs:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyXOR.swift",
+      "line": 16,
+      "symbol": "FuzzyXOR.apply(_:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/FuzzyControl/Propositions/FuzzyXOR.swift",
+      "line": 22,
+      "symbol": "^^(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariable.swift",
+      "line": 3,
+      "symbol": "LinguisticVariable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariable.swift",
+      "line": 4,
+      "symbol": "LinguisticVariable.TermName",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariable.swift",
+      "line": 5,
+      "symbol": "LinguisticVariable.Term",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariable.swift",
+      "line": 6,
+      "symbol": "LinguisticVariable.term(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariable.swift",
+      "line": 9,
+      "symbol": "LinguisticVariable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/DynamicLinguisticVariable.swift",
+      "line": 3,
+      "symbol": "DynamicLinguisticVariable",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/DynamicLinguisticVariable.swift",
+      "line": 7,
+      "symbol": "DynamicLinguisticVariable.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/DynamicLinguisticVariable.swift",
+      "line": 11,
+      "symbol": "DynamicLinguisticVariable.term(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/ModifiableLinguisticVariable.swift",
+      "line": 3,
+      "symbol": "ModifiableLinguisticVariable",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/ModifiableLinguisticVariable.swift",
+      "line": 5,
+      "symbol": "ModifiableLinguisticVariable.TermModifier",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/ModifiableLinguisticVariable.swift",
+      "line": 10,
+      "symbol": "ModifiableLinguisticVariable.init(baseTerms:termModifiers:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/ModifiableLinguisticVariable.swift",
+      "line": 18,
+      "symbol": "ModifiableLinguisticVariable.term(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/ModifiableLinguisticVariable.swift",
+      "line": 22,
+      "symbol": "ModifiableLinguisticVariable.subscript(_:applyModifier:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/ModifiableLinguisticVariable.swift",
+      "line": 26,
+      "symbol": "ModifiableLinguisticVariable.applyModifier(_:to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/ModifiableLinguisticVariable.swift",
+      "line": 31,
+      "symbol": "ModifiableLinguisticVariable.applyModifier(_:to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/SimpleLinguisticVariable.swift",
+      "line": 3,
+      "symbol": "SimpleLinguisticVariable",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/SimpleLinguisticVariable.swift",
+      "line": 7,
+      "symbol": "SimpleLinguisticVariable.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyLogic/Reasoning/LinguisticVariables/SimpleLinguisticVariable.swift",
+      "line": 15,
+      "symbol": "SimpleLinguisticVariable.term(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
+      "line": 3,
+      "symbol": "FuzzyNumber",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
+      "line": 5,
+      "symbol": "FuzzyNumber.+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
+      "line": 7,
+      "symbol": "FuzzyNumber.-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
+      "line": 9,
+      "symbol": "FuzzyNumber.-(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 3,
+      "symbol": "TriangularFuzzyNumber",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 5,
+      "symbol": "TriangularFuzzyNumber.Universe",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 7,
+      "symbol": "TriangularFuzzyNumber.minimum",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 8,
+      "symbol": "TriangularFuzzyNumber.peak",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 9,
+      "symbol": "TriangularFuzzyNumber.maximum",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 13,
+      "symbol": "TriangularFuzzyNumber.init(minimum:peak:maximum:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 20,
+      "symbol": "TriangularFuzzyNumber.init(peak:leftInterval:rightInterval:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 28,
+      "symbol": "TriangularFuzzyNumber",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 29,
+      "symbol": "TriangularFuzzyNumber.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 34,
+      "symbol": "TriangularFuzzyNumber",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 35,
+      "symbol": "TriangularFuzzyNumber.+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 43,
+      "symbol": "TriangularFuzzyNumber.-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 51,
+      "symbol": "TriangularFuzzyNumber.-(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 65,
+      "symbol": "TriangularFuzzyNumber",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 66,
+      "symbol": "TriangularFuzzyNumber.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "line": 71,
+      "symbol": "TriangularFuzzyNumber",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 3,
+      "symbol": "CompositionMethod",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 4,
+      "symbol": "CompositionMethod.maxmin",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 5,
+      "symbol": "CompositionMethod.minmax",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 6,
+      "symbol": "CompositionMethod.maxprod",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 9,
+      "symbol": "FuzzyRelationsComposition",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 16,
+      "symbol": "FuzzyRelationsComposition.init(_:_:sequence:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 29,
+      "symbol": "FuzzyRelationsComposition",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 30,
+      "symbol": "FuzzyRelationsComposition.init(_:_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 42,
+      "symbol": "FuzzyRelationsComposition",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 63,
+      "symbol": "FuzzyRelationsComposition.subscript(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzyRelationsComposition.swift",
+      "line": 67,
+      "symbol": "FuzzyRelationsComposition.callAsFunction(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzySetComposition.swift",
+      "line": 3,
+      "symbol": "FuzzySetComposition",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzySetComposition.swift",
+      "line": 8,
+      "symbol": "FuzzySetComposition.init(set:relation:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzySetComposition.swift",
+      "line": 14,
+      "symbol": "FuzzySetComposition",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzySetComposition.swift",
+      "line": 23,
+      "symbol": "FuzzySetComposition",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Compositions/FuzzySetComposition.swift",
+      "line": 24,
+      "symbol": "FuzzySetComposition.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 3,
+      "symbol": "BinaryCartesianProduct",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 10,
+      "symbol": "BinaryCartesianProduct.init(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 16,
+      "symbol": "BinaryCartesianProduct.init(_:_:membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 22,
+      "symbol": "BinaryCartesianProduct.init(_:_:membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 29,
+      "symbol": "BinaryCartesianProduct",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 30,
+      "symbol": "BinaryCartesianProduct.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 34,
+      "symbol": "BinaryCartesianProduct.subscript(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 38,
+      "symbol": "BinaryCartesianProduct.callAsFunction(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 43,
+      "symbol": "BinaryCartesianProduct",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/BinaryCartesianProduct.swift",
+      "line": 44,
+      "symbol": "BinaryCartesianProduct.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 3,
+      "symbol": "HomogenousFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 7,
+      "symbol": "HomogenousFuzzyRelation.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 11,
+      "symbol": "HomogenousFuzzyRelation.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 16,
+      "symbol": "HomogenousFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 17,
+      "symbol": "HomogenousFuzzyRelation.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 21,
+      "symbol": "HomogenousFuzzyRelation.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 25,
+      "symbol": "HomogenousFuzzyRelation.callAsFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 30,
+      "symbol": "HomogenousFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/HomogenousFuzzyRelation.swift",
+      "line": 31,
+      "symbol": "HomogenousFuzzyRelation.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 3,
+      "symbol": "TernaryFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 7,
+      "symbol": "TernaryFuzzyRelation.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 11,
+      "symbol": "TernaryFuzzyRelation.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 16,
+      "symbol": "TernaryFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 17,
+      "symbol": "TernaryFuzzyRelation.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 21,
+      "symbol": "TernaryFuzzyRelation.subscript(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 25,
+      "symbol": "TernaryFuzzyRelation.callAsFunction(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 30,
+      "symbol": "TernaryFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Products/TernaryFuzzyRelation.swift",
+      "line": 31,
+      "symbol": "TernaryFuzzyRelation.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 3,
+      "symbol": "BinaryFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 7,
+      "symbol": "BinaryFuzzyRelation.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 11,
+      "symbol": "BinaryFuzzyRelation.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 16,
+      "symbol": "BinaryFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 17,
+      "symbol": "BinaryFuzzyRelation.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 21,
+      "symbol": "BinaryFuzzyRelation.subscript(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 25,
+      "symbol": "BinaryFuzzyRelation.callAsFunction(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 30,
+      "symbol": "BinaryFuzzyRelation",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyRelations/Relations/BinaryFuzzyRelation.swift",
+      "line": 31,
+      "symbol": "BinaryFuzzyRelation.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 3,
+      "symbol": "MembershipFunction",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 5,
+      "symbol": "MembershipFunction.FunctionType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 9,
+      "symbol": "MembershipFunction.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 13,
+      "symbol": "MembershipFunction.callAsFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 19,
+      "symbol": "MembershipFunction",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 20,
+      "symbol": "MembershipFunction.zero",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 24,
+      "symbol": "MembershipFunction.one",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 29,
+      "symbol": "MembershipFunction",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 30,
+      "symbol": "MembershipFunction.fuzzySingleton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 35,
+      "symbol": "MembershipFunction",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 36,
+      "symbol": "MembershipFunction.fromCrispSet(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 40,
+      "symbol": "MembershipFunction.fromDictionary(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 45,
+      "symbol": "MembershipFunction",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 46,
+      "symbol": "MembershipFunction.rightOpen(slopeStart:slopeEnd:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 57,
+      "symbol": "MembershipFunction.leftOpen(slopeStart:slopeEnd:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 68,
+      "symbol": "MembershipFunction.triangular(minimum:peak:maximum:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 79,
+      "symbol": "MembershipFunction.trapezoidal(leftSlopeStart:leftSlopeEnd:rightSlopeStart:rightSlopeEnd:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 96,
+      "symbol": "MembershipFunction.gaussian(mean:stdev:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 102,
+      "symbol": "MembershipFunction.bell(width:shape:center:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/MembershipFunction.swift",
+      "line": 108,
+      "symbol": "MembershipFunction.sigmoid(width:center:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 10,
+      "symbol": "TNormFunction.minimum",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 11,
+      "symbol": "TNormFunction.lukasiewicz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 12,
+      "symbol": "TNormFunction.product",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 13,
+      "symbol": "TNormFunction.weak",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 14,
+      "symbol": "TNormFunction.hamacher(gamma:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 15,
+      "symbol": "TNormFunction.duboisAndPrade(alpha:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 16,
+      "symbol": "TNormFunction.yager(p:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 17,
+      "symbol": "TNormFunction.frank(lambda:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 19,
+      "symbol": "TNormFunction.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 21,
+      "symbol": "TNormFunction.function",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 66,
+      "symbol": "SNormFunction.maximum",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 67,
+      "symbol": "SNormFunction.lukasiewicz",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 68,
+      "symbol": "SNormFunction.probabilistic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 69,
+      "symbol": "SNormFunction.strong",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 70,
+      "symbol": "SNormFunction.hamacher(gamma:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 71,
+      "symbol": "SNormFunction.yager(p:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 73,
+      "symbol": "SNormFunction.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 75,
+      "symbol": "SNormFunction.function",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 102,
+      "symbol": "ComplementFunction.standard",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 103,
+      "symbol": "ComplementFunction.yager(w:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 104,
+      "symbol": "ComplementFunction.sugeno(s:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 106,
+      "symbol": "ComplementFunction.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 108,
+      "symbol": "ComplementFunction.function",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 122,
+      "symbol": "DifferenceFunction",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 128,
+      "symbol": "DifferenceFunction.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 130,
+      "symbol": "DifferenceFunction.function",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 142,
+      "symbol": "SymmetricDifferenceFunction",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 143,
+      "symbol": "SymmetricDifferenceFunction.absoluteValue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 144,
+      "symbol": "SymmetricDifferenceFunction.minMaxAndStandardComplement",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 145,
+      "symbol": "SymmetricDifferenceFunction.tNormSNormAndComplement(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 146,
+      "symbol": "SymmetricDifferenceFunction.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Functions/OperatorFunctions.swift",
+      "line": 148,
+      "symbol": "SymmetricDifferenceFunction.function",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySet.swift",
+      "line": 4,
+      "symbol": "FuzzySet",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySet.swift",
+      "line": 5,
+      "symbol": "FuzzySet.Universe",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySet.swift",
+      "line": 7,
+      "symbol": "FuzzySet.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySet.swift",
+      "line": 9,
+      "symbol": "FuzzySet.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySet.swift",
+      "line": 12,
+      "symbol": "FuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySet.swift",
+      "line": 13,
+      "symbol": "FuzzySet.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySet.swift",
+      "line": 19,
+      "symbol": "FuzzySet.callAsFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 1,
+      "symbol": "FuzzySetOperations",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 3,
+      "symbol": "FuzzySetOperations.alphaCut(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 5,
+      "symbol": "FuzzySetOperations.complement(method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 7,
+      "symbol": "FuzzySetOperations.intersection(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 9,
+      "symbol": "FuzzySetOperations.union(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 11,
+      "symbol": "FuzzySetOperations.difference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 13,
+      "symbol": "FuzzySetOperations.symmetricDifference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 15,
+      "symbol": "FuzzySetOperations.power(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/FuzzySetOperations.swift",
+      "line": 17,
+      "symbol": "FuzzySetOperations.appliedCustomFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 3,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 6,
+      "symbol": "AnyFuzzySet.init(membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 10,
+      "symbol": "AnyFuzzySet.init(membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 17,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 18,
+      "symbol": "AnyFuzzySet.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 25,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 26,
+      "symbol": "AnyFuzzySet.alphaCut(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 30,
+      "symbol": "AnyFuzzySet.complement(method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 34,
+      "symbol": "AnyFuzzySet.intersection(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 38,
+      "symbol": "AnyFuzzySet.union(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 42,
+      "symbol": "AnyFuzzySet.difference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 46,
+      "symbol": "AnyFuzzySet.symmetricDifference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 50,
+      "symbol": "AnyFuzzySet.power(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 54,
+      "symbol": "AnyFuzzySet.appliedCustomFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 61,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 62,
+      "symbol": "AnyFuzzySet.empty",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 66,
+      "symbol": "AnyFuzzySet.universe",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 73,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 74,
+      "symbol": "AnyFuzzySet.fromCrispSet(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 81,
+      "symbol": "AnyFuzzySetRepresentable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 82,
+      "symbol": "AnyFuzzySetRepresentable.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 85,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 86,
+      "symbol": "AnyFuzzySet.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 92,
+      "symbol": "DiscreteMutableFuzzySet.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 98,
+      "symbol": "IterableFuzzySet.eraseToAnyFuzzySet()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 117,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 123,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 1,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 3,
+      "symbol": "DiscreteMutableFuzzySet.grades",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 4,
+      "symbol": "DiscreteMutableFuzzySet.defaultGrade",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 6,
+      "symbol": "DiscreteMutableFuzzySet.init(_:defaultGrade:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 19,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 28,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 29,
+      "symbol": "DiscreteMutableFuzzySet.alphaCut(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 35,
+      "symbol": "DiscreteMutableFuzzySet.complement(method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 41,
+      "symbol": "DiscreteMutableFuzzySet.intersection(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 47,
+      "symbol": "DiscreteMutableFuzzySet.union(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 53,
+      "symbol": "DiscreteMutableFuzzySet.difference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 59,
+      "symbol": "DiscreteMutableFuzzySet.symmetricDifference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 65,
+      "symbol": "DiscreteMutableFuzzySet.power(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 71,
+      "symbol": "DiscreteMutableFuzzySet.appliedCustomFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 80,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 87,
+      "symbol": "DiscreteMutableFuzzySet.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 91,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 96,
+      "symbol": "DiscreteMutableFuzzySet.applyAlphaCut(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 100,
+      "symbol": "DiscreteMutableFuzzySet.formComplement(method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 104,
+      "symbol": "DiscreteMutableFuzzySet.formIntersection(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 108,
+      "symbol": "DiscreteMutableFuzzySet.formUnion(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 112,
+      "symbol": "DiscreteMutableFuzzySet.formDifference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 116,
+      "symbol": "DiscreteMutableFuzzySet.formSymmetricDifference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 120,
+      "symbol": "DiscreteMutableFuzzySet.applyPower(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 127,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 128,
+      "symbol": "DiscreteMutableFuzzySet.support",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 129,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 137,
+      "symbol": "DiscreteMutableFuzzySet.core",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 139,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 146,
+      "symbol": "DiscreteMutableFuzzySet.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 153,
+      "symbol": "DiscreteMutableFuzzySet.isNormal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 161,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 162,
+      "symbol": "DiscreteMutableFuzzySet.fromCrispSet(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 171,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 182,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 183,
+      "symbol": "DiscreteMutableFuzzySet.applyFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 193,
+      "symbol": "DiscreteMutableFuzzySet.applyFunction(_:whenMergingWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 1,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 4,
+      "symbol": "IterableFuzzySet.Element.element",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 5,
+      "symbol": "IterableFuzzySet.Element.grade",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 7,
+      "symbol": "IterableFuzzySet.Element.init(element:grade:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 15,
+      "symbol": "IterableFuzzySet.sequence",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 18,
+      "symbol": "IterableFuzzySet.init(_:membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 23,
+      "symbol": "IterableFuzzySet.init(_:membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 29,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 30,
+      "symbol": "IterableFuzzySet.init(membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 35,
+      "symbol": "IterableFuzzySet.init(membershipFunction:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 43,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 44,
+      "symbol": "IterableFuzzySet.grade(forElement:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 51,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 53,
+      "symbol": "IterableFuzzySet.alphaCut(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 59,
+      "symbol": "IterableFuzzySet.complement(method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 65,
+      "symbol": "IterableFuzzySet.intersection(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 71,
+      "symbol": "IterableFuzzySet.union(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 77,
+      "symbol": "IterableFuzzySet.difference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 83,
+      "symbol": "IterableFuzzySet.symmetricDifference(_:method:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 89,
+      "symbol": "IterableFuzzySet.power(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 95,
+      "symbol": "IterableFuzzySet.appliedCustomFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 97,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 104,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 118,
+      "symbol": "AnyFuzzySet.makeIterable(over:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 124,
+      "symbol": "AnyFuzzySet.makeIterable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 130,
+      "symbol": "DiscreteMutableFuzzySet.makeIterable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 134,
+      "symbol": "DiscreteMutableFuzzySet.makeIterable(over:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 140,
+      "symbol": "DiscreteMutableFuzzySet.makeIterable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 145,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 146,
+      "symbol": "IterableFuzzySet.makeDiscreteMutable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 153,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 154,
+      "symbol": "IterableFuzzySet.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 158,
+      "symbol": "IterableFuzzySet.isNormal",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 163,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 164,
+      "symbol": "IterableFuzzySet.support",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 171,
+      "symbol": "IterableFuzzySet.core",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 181,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 182,
+      "symbol": "IterableFuzzySet.fromCrispSet(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 189,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 190,
+      "symbol": "IterableFuzzySet.singleton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 196,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 197,
+      "symbol": "IterableFuzzySet.singleton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/FuzzyKit/FuzzyKit"
+}

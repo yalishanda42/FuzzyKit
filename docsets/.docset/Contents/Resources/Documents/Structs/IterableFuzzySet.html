@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IterableFuzzySet Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/IterableFuzzySet" class="dashAnchor"></a>
+    <a title="IterableFuzzySet Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (7% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        IterableFuzzySet Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/FuzzyLogicController.html">FuzzyLogicController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ComplementFunction.html">ComplementFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CompositionMethod.html">CompositionMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DifferenceFunction.html">DifferenceFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ImplicationMethod.html">ImplicationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SNormFunction.html">SNormFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SymmetricDifferenceFunction.html">SymmetricDifferenceFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TNormFunction.html">TNormFunction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic1nopyAA0A8NegationVy5InputQzGxAA0A11PropositionRzlF">!(_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic2aaoiyAA0A11ConjunctionVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">&amp;&amp;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic3ssgoiyAA0A4RuleVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">--&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic2xxoiyAA0A3XORVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">^^(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:10FuzzyLogic2oooiyAA0A11DisjunctionVy5InputQz_AEQy_tGx_q_tAA0A11PropositionRzAaIR_r0_lF">||(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AnyFuzzySetRepresentable.html">AnyFuzzySetRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzyImplicationCapable.html">FuzzyImplicationCapable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzyNumber.html">FuzzyNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzyProposition.html">FuzzyProposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzySet.html">FuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FuzzySetOperations.html">FuzzySetOperations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LinguisticVariable.html">LinguisticVariable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AnyFuzzySet.html">AnyFuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BinaryCartesianProduct.html">BinaryCartesianProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BinaryFuzzyRelation.html">BinaryFuzzyRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DiscreteMutableFuzzySet.html">DiscreteMutableFuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DynamicLinguisticVariable.html">DynamicLinguisticVariable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyConjunction.html">FuzzyConjunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyDisjunction.html">FuzzyDisjunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyNegation.html">FuzzyNegation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRelationsComposition.html">FuzzyRelationsComposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRule.html">FuzzyRule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRuleBase.html">FuzzyRuleBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyRuleBase/FuzzyRuleBaseBuilder.html">– FuzzyRuleBaseBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzySetComposition.html">FuzzySetComposition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FuzzyXOR.html">FuzzyXOR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HomogenousFuzzyRelation.html">HomogenousFuzzyRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IterableFuzzySet/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MembershipFunction.html">MembershipFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ModifiableLinguisticVariable.html">ModifiableLinguisticVariable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OperationSettings.html">OperationSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SimpleLinguisticVariable.html">SimpleLinguisticVariable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TernaryFuzzyRelation.html">TernaryFuzzyRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TriangularFuzzyNumber.html">TriangularFuzzyNumber</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IterableFuzzySet</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Universe</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IterableFuzzySet</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AnyFuzzySetRepresentable.html">AnyFuzzySetRepresentable</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IterableFuzzySet</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FuzzySet.html">FuzzySet</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IterableFuzzySet</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FuzzySetOperations.html">FuzzySetOperations</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IterableFuzzySet</span><span class="p">:</span> <span class="kt">Sequence</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IterableFuzzySet</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FuzzyImplicationCapable.html">FuzzyImplicationCapable</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IterableFuzzySet</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FuzzyProposition.html">FuzzyProposition</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ST7ElementQa"></a>
+                    <a name="//apple_ref/swift/Struct/Element" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST7ElementQa">Element</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="../Structs/IterableFuzzySet/Element.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Element</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="k">where</span> <span class="kt">Universe</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Hashable</span> <span class="k">where</span> <span class="kt">Universe</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="k">where</span> <span class="kt">Universe</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/IterableFuzzySet.html">IterableFuzzySet</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="k">where</span> <span class="kt">Universe</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ST8IteratorQa"></a>
+                    <a name="//apple_ref/swift/Alias/Iterator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST8IteratorQa">Iterator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Iterator</span> <span class="o">=</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IterableFuzzySet/Element.html">Element</a></span><span class="o">&gt;.</span><span class="kt">Iterator</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV8sequenceq_vp"></a>
+                    <a name="//apple_ref/swift/Property/sequence" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV8sequenceq_vp">sequence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV_18membershipFunctionACyxq_Gq__AA010MembershipF0VyxGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:membershipFunction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV_18membershipFunctionACyxq_Gq__AA010MembershipF0VyxGtcfc">init(_:<wbr>membershipFunction:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">,</span> <span class="nv">membershipFunction</span><span class="p">:</span> <span class="kt"><a href="../Structs/MembershipFunction.html">MembershipFunction</a></span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV_18membershipFunctionACyxq_Gq__Sdxctcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:membershipFunction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV_18membershipFunctionACyxq_Gq__Sdxctcfc">init(_:<wbr>membershipFunction:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">sequence</span><span class="p">:</span> <span class="kt">S</span><span class="p">,</span> <span class="nv">membershipFunction</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Structs/MembershipFunction.html">MembershipFunction</a></span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;.</span><span class="kt">FunctionType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Type%20erasure"></a>
+                <a name="//apple_ref/swift/Section/Type erasure" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Type%20erasure"></a>
+                  <h3 class="section-name"><span>Type erasure</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV010eraseToAnyaD0AA0gaD0VyxGyF"></a>
+                    <a name="//apple_ref/swift/Method/eraseToAnyFuzzySet()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV010eraseToAnyaD0AA0gaD0VyxGyF">eraseToAnyFuzzySet()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">eraseToAnyFuzzySet</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AnyFuzzySet.html">AnyFuzzySet</a></span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Fuzzy%20set"></a>
+                <a name="//apple_ref/swift/Section/Fuzzy set" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Fuzzy%20set"></a>
+                  <h3 class="section-name"><span>Fuzzy set</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV5grade10forElementSdx_tF"></a>
+                    <a name="//apple_ref/swift/Method/grade(forElement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV5grade10forElementSdx_tF">grade(forElement:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">grade</span><span class="p">(</span><span class="n">forElement</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Universe</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Fuzzy%20set%20operations"></a>
+                <a name="//apple_ref/swift/Section/Fuzzy set operations" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Fuzzy%20set%20operations"></a>
+                  <h3 class="section-name"><span>Fuzzy set operations</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV8alphaCutyACyxq_GSdF"></a>
+                    <a name="//apple_ref/swift/Method/alphaCut(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV8alphaCutyACyxq_GSdF">alphaCut(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">alphaCut</span><span class="p">(</span><span class="n">_</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV10complement6methodACyxq_GAA18ComplementFunctionO_tF"></a>
+                    <a name="//apple_ref/swift/Method/complement(method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV10complement6methodACyxq_GAA18ComplementFunctionO_tF">complement(method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">complement</span><span class="p">(</span><span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/ComplementFunction.html">ComplementFunction</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">standard</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV12intersection_6methodACyxq_GAF_AA13TNormFunctionOtF"></a>
+                    <a name="//apple_ref/swift/Method/intersection(_:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV12intersection_6methodACyxq_GAF_AA13TNormFunctionOtF">intersection(_:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">intersection</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/TNormFunction.html">TNormFunction</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">minimum</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV5union_6methodACyxq_GAF_AA13SNormFunctionOtF"></a>
+                    <a name="//apple_ref/swift/Method/union(_:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV5union_6methodACyxq_GAF_AA13SNormFunctionOtF">union(_:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">union</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/SNormFunction.html">SNormFunction</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">maximum</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV10difference_6methodACyxq_GAF_AA18DifferenceFunctionOtF"></a>
+                    <a name="//apple_ref/swift/Method/difference(_:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV10difference_6methodACyxq_GAF_AA18DifferenceFunctionOtF">difference(_:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">difference</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/DifferenceFunction.html">DifferenceFunction</a></span> <span class="o">=</span> <span class="o">.</span><span class="nf">tNormAndComplement</span><span class="p">(</span><span class="o">.</span><span class="n">minimum</span><span class="p">,</span> <span class="o">.</span><span class="n">standard</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV19symmetricDifference_6methodACyxq_GAF_AA09SymmetricF8FunctionOtF"></a>
+                    <a name="//apple_ref/swift/Method/symmetricDifference(_:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV19symmetricDifference_6methodACyxq_GAF_AA09SymmetricF8FunctionOtF">symmetricDifference(_:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">symmetricDifference</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/SymmetricDifferenceFunction.html">SymmetricDifferenceFunction</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">absoluteValue</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV5poweryACyxq_GSdF"></a>
+                    <a name="//apple_ref/swift/Method/power(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV5poweryACyxq_GSdF">power(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">power</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV21appliedCustomFunctionyACyxq_GS2dcF"></a>
+                    <a name="//apple_ref/swift/Method/appliedCustomFunction(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV21appliedCustomFunctionyACyxq_GS2dcF">appliedCustomFunction(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">appliedCustomFunction</span><span class="p">(</span><span class="n">_</span> <span class="nv">function</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Sequence"></a>
+                <a name="//apple_ref/swift/Section/Sequence" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Sequence"></a>
+                  <h3 class="section-name"><span>Sequence</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ST12makeIterator0B0QzyF"></a>
+                    <a name="//apple_ref/swift/Method/makeIterator()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST12makeIterator0B0QzyF">makeIterator()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeIterator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/IterableFuzzySet.html#/s:ST8IteratorQa">Iterator</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><span>Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV6heightSdvp"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV6heightSdvp">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">height</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV8isNormalSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isNormal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV8isNormalSbvp">isNormal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isNormal</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Utility"></a>
+                <a name="//apple_ref/swift/Section/Utility" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Utility"></a>
+                  <h3 class="section-name"><span>Utility</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV9singletonyACyqd___qd_0_tSayqd___qd_0_tGGqd___qd_0_t_tqd___qd_0_tRszAERs_SQRd__SQRd_0_r0_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/singleton(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV9singletonyACyqd___qd_0_tSayqd___qd_0_tGGqd___qd_0_t_tqd___qd_0_tRszAERs_SQRd__SQRd_0_r0_lFZ">singleton(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">singleton</span><span class="o">&lt;</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">u</span><span class="p">:</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Universe</span> <span class="o">==</span> <span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">),</span> <span class="kt">S</span> <span class="o">==</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">A</span><span class="p">,</span> <span class="kt">B</span><span class="p">)</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">A</span> <span class="p">:</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">B</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV0A5LogicE11implication_6methodACyxq_GAG_AD17ImplicationMethodOtF"></a>
+                    <a name="//apple_ref/swift/Method/implication(_:method:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV0A5LogicE11implication_6methodACyxq_GAG_AD17ImplicationMethodOtF">implication(_:<wbr>method:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">implication</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="err">`</span><span class="k">Self</span><span class="err">`</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/ImplicationMethod.html">ImplicationMethod</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">mamdani</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetV0A5LogicE5apply_8settingsSdx_AD17OperationSettingsVtF"></a>
+                    <a name="//apple_ref/swift/Method/apply(_:settings:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetV0A5LogicE5apply_8settingsSdx_AD17OperationSettingsVtF">apply(_:<wbr>settings:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">apply</span><span class="p">(</span><span class="n">_</span> <span class="nv">x</span><span class="p">:</span> <span class="kt">Universe</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Structs/OperationSettings.html">OperationSettings</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:9FuzzySets5Gradea">Grade</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Universe%60%3A%20%60CaseIterable%60%2C%20%60S%60%20%3D%3D%20%60Universe.AllCases%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Universe`: `CaseIterable`, `S` == `Universe.AllCases`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Universe%60%3A%20%60CaseIterable%60%2C%20%60S%60%20%3D%3D%20%60Universe.AllCases%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Universe</code>: <code>CaseIterable</code>, <code>S</code> == <code>Universe.AllCases</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetVAAs04CaseC0Rz8AllCasesQzRs_rlE18membershipFunctionACyxq_GAA010MembershipI0VyxG_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(membershipFunction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetVAAs04CaseC0Rz8AllCasesQzRs_rlE18membershipFunctionACyxq_GAA010MembershipI0VyxG_tcfc">init(membershipFunction:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">membershipFunction</span><span class="p">:</span> <span class="kt"><a href="../Structs/MembershipFunction.html">MembershipFunction</a></span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetVAAs04CaseC0Rz8AllCasesQzRs_rlE18membershipFunctionACyxq_GSdxc_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(membershipFunction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetVAAs04CaseC0Rz8AllCasesQzRs_rlE18membershipFunctionACyxq_GSdxc_tcfc">init(membershipFunction:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">membershipFunction</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Structs/MembershipFunction.html">MembershipFunction</a></span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;.</span><span class="kt">FunctionType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Universe%60%3A%20%60Hashable%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Universe`: `Hashable`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Universe%60%3A%20%60Hashable%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Universe</code>: <code>Hashable</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetVAASHRzrlE19makeDiscreteMutableAA0fgaD0VyxGyF"></a>
+                    <a name="//apple_ref/swift/Method/makeDiscreteMutable()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetVAASHRzrlE19makeDiscreteMutableAA0fgaD0VyxGyF">makeDiscreteMutable()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">makeDiscreteMutable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/DiscreteMutableFuzzySet.html">DiscreteMutableFuzzySet</a></span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetVAASHRzrlE7supportShyxGvp"></a>
+                    <a name="//apple_ref/swift/Property/support" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetVAASHRzrlE7supportShyxGvp">support</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">support</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetVAASHRzrlE4coreShyxGvp"></a>
+                    <a name="//apple_ref/swift/Property/core" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetVAASHRzrlE4coreShyxGvp">core</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">core</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60S%60%20%3D%3D%20%60Set%3CUniverse%60%3E"></a>
+                <a name="//apple_ref/swift/Section/Available where `S` == `Set&lt;Universe`&gt;" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60S%60%20%3D%3D%20%60Set%3CUniverse%60%3E"></a>
+                  <h3 class="section-name"><span>Available where <code>S</code> == <code>Set&lt;Universe</code>&gt;</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetVAASHRzShyxGRs_rlE09fromCrispD0yACyxADGADFZ"></a>
+                    <a name="//apple_ref/swift/Method/fromCrispSet(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetVAASHRzShyxGRs_rlE09fromCrispD0yACyxADGADFZ">fromCrispSet(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">fromCrispSet</span><span class="p">(</span><span class="n">_</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Universe%60%3A%20%60Equatable%60%2C%20%60S%60%20%3D%3D%20%60Array%3CUniverse%60%3E"></a>
+                <a name="//apple_ref/swift/Section/Available where `Universe`: `Equatable`, `S` == `Array&lt;Universe`&gt;" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Universe%60%3A%20%60Equatable%60%2C%20%60S%60%20%3D%3D%20%60Array%3CUniverse%60%3E"></a>
+                  <h3 class="section-name"><span>Available where <code>Universe</code>: <code>Equatable</code>, <code>S</code> == <code>Array&lt;Universe</code>&gt;</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9FuzzySets08IterableA3SetVAASQRzSayxGRs_rlE9singletonyACyxADGxFZ"></a>
+                    <a name="//apple_ref/swift/Method/singleton(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9FuzzySets08IterableA3SetVAASQRzSayxGRs_rlE9singletonyACyxADGxFZ">singleton(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">singleton</span><span class="p">(</span><span class="n">_</span> <span class="nv">u</span><span class="p">:</span> <span class="kt">Universe</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IterableFuzzySet</span><span class="o">&lt;</span><span class="kt">Universe</span><span class="p">,</span> <span class="kt">S</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Alexander Ignatov</a>. All rights reserved. (Last updated: 2022-01-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
