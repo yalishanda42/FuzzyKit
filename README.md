@@ -44,9 +44,9 @@ let ruleBase = FuzzyRuleBase {
     funding.is(.inadequate) || Ø --> risk.is(.high)
 }
 
-let flc = FuzzyLinguisticController(rules: ruleBase, settings: .init(implication: .mamdani))
+let flc = FuzzyLogicController(rules: ruleBase, settings: .init(implication: .mamdani))
 
-flc.consequenceGrade(for: 50, usingFact: .singleton((8.8, 42)))  // result is 0.675
+flc.consequenceGrade(for: 50, usingSingletonFact: (8.8, 42))  // result is 0.675
 ```
 
 ## Modules

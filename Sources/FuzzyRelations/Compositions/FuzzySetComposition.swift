@@ -19,3 +19,11 @@ extension FuzzySetComposition: FuzzySet {
         }.max() ?? 0
     }
 }
+
+extension FuzzySetComposition: AnyFuzzySetRepresentable {
+    public func eraseToAnyFuzzySet() -> AnyFuzzySet<V> {
+        .init {
+            self($0)
+        }
+    }
+}

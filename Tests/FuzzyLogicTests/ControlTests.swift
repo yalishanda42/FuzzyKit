@@ -33,14 +33,18 @@ final class ControlTests: XCTestCase {
             funding.is(.inadequate) || Ø --> risk.is(.high)
         }
         
-        let sut = FuzzyLinguisticController(rules: ruleBase)
-        let sut2 = FuzzyLinguisticController(rules: ruleBase, settings: .init(implication: .larsen))
+        let sut = FuzzyLogicController(rules: ruleBase)
+        let sut2 = FuzzyLogicController(rules: ruleBase, settings: .init(implication: .larsen))
         
-        let fact = IterableFuzzySet.singleton((8.8, 42.0))
+        let tuple = (8.8, 42.0)
+        let fact = IterableFuzzySet.singleton(tuple)
         
         let result1 = sut.consequenceGrade(for: 100, usingFact: fact)
         let result2 = sut.consequenceGrade(for: 0, usingFact: fact)
         let result3 = sut.consequenceGrade(for: 50, usingFact: fact)
+        let result11 = sut.consequenceGrade(for: 100, usingSingletonFact: tuple)
+        let result22 = sut.consequenceGrade(for: 0, usingSingletonFact: tuple)
+        let result33 = sut.consequenceGrade(for: 50, usingSingletonFact: tuple)
         
         let result4 = sut2.consequenceGrade(for: 100, usingFact: fact)
         let result5 = sut2.consequenceGrade(for: 0, usingFact: fact)
@@ -49,6 +53,9 @@ final class ControlTests: XCTestCase {
         XCTAssertApproximatelyEqual(1.0, result1)
         XCTAssertApproximatelyEqual(0.675, result2)
         XCTAssertApproximatelyEqual(0.0, result3)
+        XCTAssertApproximatelyEqual(1.0, result11)
+        XCTAssertApproximatelyEqual(0.675, result22)
+        XCTAssertApproximatelyEqual(0.0, result33)
         XCTAssertApproximatelyEqual(1.0, result4)
         XCTAssertApproximatelyEqual(0.675, result5)
         XCTAssertApproximatelyEqual(0.0, result6)
