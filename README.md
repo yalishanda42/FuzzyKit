@@ -46,7 +46,7 @@ let ruleBase = FuzzyRuleBase {
 
 let flc = FuzzyLinguisticController(rules: ruleBase, settings: .init(implication: .mamdani))
 
-flc.consequenceGrade(for: 50, usingFact: singleton((8.8, 42)))  // result is 0.675
+flc.consequenceGrade(for: 50, usingFact: .singleton((8.8, 42)))  // result is 0.675
 ```
 
 ## Modules
