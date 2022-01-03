@@ -17,7 +17,7 @@ open class FuzzyLinguisticController<AntecedentUniverse, ConsequentUniverse> {
     }
     
     open func consequenceGrade<S: Sequence>(
-        _ value: ConsequentUniverse,
+        for value: ConsequentUniverse,
         usingFact fact: IterableFuzzySet<AntecedentUniverse, S>
     ) -> Grade {
         ruleBase

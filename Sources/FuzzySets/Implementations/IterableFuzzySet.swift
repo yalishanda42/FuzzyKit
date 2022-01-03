@@ -192,6 +192,15 @@ public extension IterableFuzzySet where Universe: Equatable, S == Array<Universe
     }
 }
 
+// Some workaround for https://forums.swift.org/t/tuples-conform-to-equatable/32559/74
+public extension IterableFuzzySet {
+    static func singleton<A: Equatable, B: Equatable>(_ u: (A, B)) -> Self where S == Array<(A, B)> {
+        .init([u]) {
+            $0.0 == u.0 && $0.1 == u.1 ? 1 : 0
+        }
+    }
+}
+
 extension IterableFuzzySet.Element: Equatable where Universe: Equatable {}
 extension IterableFuzzySet.Element: Hashable where Universe: Hashable {}
 extension IterableFuzzySet.Element: Encodable where Universe: Encodable {}
