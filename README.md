@@ -95,3 +95,11 @@ import FuzzyRelations
 import FuzzyLogic
 ```
 
+## API Reference
+
+API Reference automatically collected with `jazzy` is published [here](https://allexks.github.io/FuzzyKit) with each new release.
+
+## License
+
+[MIT](LICENSE)
+
