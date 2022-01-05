@@ -41,8 +41,8 @@ final class DiscreteMutableFuzzySetTests: XCTestCase {
             "b": 1,
         ]
         let sut = DiscreteMutableFuzzySet(parameters)
-        let expected1 = "<FuzzySet: {0.69/a, 1.0/b}, other values == 0.0>"
-        let expected2 = "<FuzzySet: {1.0/b, 0.69/a}, other values == 0.0>"
+        let expected1 = "<FuzzySet: {0.69/a + 1.0/b}, other values == 0.0>"
+        let expected2 = "<FuzzySet: {1.0/b + 0.69/a}, other values == 0.0>"
         
         let result = String(describing: sut)
         

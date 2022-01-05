@@ -101,27 +101,35 @@ API Reference automatically collected with `jazzy` is published [here](https://a
 
 ## `FuzzySets` Module
 
-* `protocol FuzzySet`: This abstraction requires a fuzzy set to provide a `grade(forElement:)` method which accepts a parameter of an `associatedtype Universe` and returns its membership `Grade` in the set. There are 3 provided concrete implementations in this module:
-    1. `struct AnyFuzzySet` - allows type erasure. It only stores a `MembershipFunction` and has non-mutable methods.
-    2. `struct IterableFuzzySet` - stores a `MembershipFunction` as well as a `Sequence` of elements of the associated type `Universe`. Implements `Sequence` so that it can easily be iterated over them. The elements of the iteration over an `IterableFuzzySet` are `struct`s containing `grade` and `element` properties. It has non-mutable methods only.
-    3. `struct DiscreteMutableFuzzySet` - it is "discrete" because it doesn't stores a `MembershipFunction` but instead keeps its elements and their grade in a `Dictionary`, and it is "mutable" because it contains mutable equivalents of all other methods that operate over the set (including `subscript`). A default value of `0` is returned for the grade of an element that is not in the dictionary (a different default value can be provided as well).
+### `protocol FuzzySet`
+This abstraction requires a fuzzy set to provide a `grade(forElement:)` method which accepts a parameter of an `associatedtype Universe` and returns its membership `Grade` in the set. There are 3 provided concrete implementations in this module:
 
-* `protocol FuzzySetOperations` - all 3 concrete types implement it. It requires the following methods that operate on fuzzy sets:
-    * `alphaCut(_:alpha:)`
+1. `struct AnyFuzzySet` - allows type erasure. It only stores a `MembershipFunction` and has non-mutable methods.
 
-    * `complement(method:)`
+2. `struct IterableFuzzySet` - stores a `MembershipFunction` as well as a `Sequence` of elements of the associated type `Universe`. Implements `Sequence` so that it can easily be iterated over them. The elements of the iteration over an `IterableFuzzySet` are `struct`s containing `grade` and `element` properties. It has non-mutable methods only. Includes `support`, `core` and `height` computed properties.
 
-    * `intersection(_:method:)`
+3. `struct DiscreteMutableFuzzySet` - it is "discrete" because it doesn't stores a `MembershipFunction` but instead keeps its elements and their grade in a `Dictionary`, and it is "mutable" because it contains mutable equivalents of all other methods that operate over the set (including `subscript`). A default value of `0` is returned for the grade of an element that is not in the dictionary (a different default value can be provided as well). Includes `support`, `core` and `height` computed properties. A bonus feature is its debug print using Zadeh's notation.
 
-    * `union(_:method:)`
+Convertions between the 3 types are easy and possible using the `eraseToAnyFuzzySet`, `makeIterable` and `makeDiscreteMutable` methods defined on them.
 
-    * `difference(_:method:)`
+### `protocol FuzzySetOperations`
+All 3 concrete types implement it. It requires the following methods that operate on fuzzy sets:
 
-    * `symmetricDifference(_:method:)`
+* `alphaCut(_:alpha:)`
 
-    * `power(_:n:)`
+* `complement(method:)`
 
-    * `appliedCustomFunction(_:function:)`
+* `intersection(_:method:)`
+
+* `union(_:method:)`
+
+* `difference(_:method:)`
+
+* `symmetricDifference(_:method:)`
+
+* `power(_:n:)`
+
+* `appliedCustomFunction(_:function:)`
 
 ## License
 

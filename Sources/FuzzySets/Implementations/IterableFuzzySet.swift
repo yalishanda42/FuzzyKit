@@ -142,12 +142,6 @@ public extension DiscreteMutableFuzzySet where Universe: CaseIterable {
     }
 }
 
-public extension IterableFuzzySet where Universe: Hashable {
-    func makeDiscreteMutable() -> DiscreteMutableFuzzySet<Universe> {
-        .init(.init(uniqueKeysWithValues: sequence.map { ($0, self[$0]) }))
-    }
-}
-
 // MARK: - Properties
 
 public extension IterableFuzzySet {

@@ -19,7 +19,7 @@ public struct DiscreteMutableFuzzySet<Universe: Hashable>: ExpressibleByDictiona
 extension DiscreteMutableFuzzySet: FuzzySet {
     /// - Complexity: O(1)
     public func grade(forElement element: Universe) -> Grade {
-        grades[element] ?? defaultGrade
+        grades[element, default: defaultGrade]
     }
 }
 
@@ -120,6 +120,25 @@ public extension DiscreteMutableFuzzySet {
     mutating func applyPower(_ n: Double) {
         applyFunction { Double.pow($0, n) }
     }
+    
+    mutating func applyFunction(_ function: (Grade) -> Grade) {
+        let newGradeTuples = grades.map {
+            ($0.key, function($0.value))
+        }
+        let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
+        grades = newMap
+        defaultGrade = function(defaultGrade)
+        sanitize()
+    }
+    
+    mutating func applyFunction(
+        _ function: (Grade, Grade) -> Grade,
+        whenMergingWith anotherSet: Self
+    ) {
+        grades.merge(anotherSet.grades, uniquingKeysWith: function)
+        defaultGrade = function(defaultGrade, anotherSet.defaultGrade)
+        sanitize()
+    }
 }
 
 // MARK: - Properties
@@ -169,36 +188,49 @@ public extension DiscreteMutableFuzzySet {
 // MARK: - Debug
 
 extension DiscreteMutableFuzzySet: CustomStringConvertible {
+    /// Pretty-print contents of `self` using Zadeh's notation.
     public var description: String {
         let guts = grades.map {
             "\($0.value)/\($0.key)"
-        }.joined(separator: ", ")
+        }.joined(separator: " + ")
         return "<FuzzySet: {\(guts)}, other values == \(defaultGrade)>"
+    }
+}
+
+// MARK: - Convertion
+
+public extension AnyFuzzySet where Universe: Hashable {
+    func makeDiscreteMutable(
+        takeOnly set: Set<Universe>,
+        forOthersUse defaultValue: Grade = 0
+    ) -> DiscreteMutableFuzzySet<Universe> {
+        .init(
+            .init(uniqueKeysWithValues: set.map { ($0, self[$0]) }),
+            defaultGrade: defaultValue
+        )
+    }
+    
+    func makeDiscreteMutable<S: Sequence>(
+        takeOnly sequence: S,
+        forOthersUse defaultValue: Grade = 0
+    ) -> DiscreteMutableFuzzySet<Universe>
+    where S.Element == Universe {
+        .init(
+            .init(uniqueKeysWithValues: sequence.map { ($0, self[$0]) }),
+            defaultGrade: defaultValue
+        )
+    }
+}
+
+public extension IterableFuzzySet where Universe: Hashable {
+    func makeDiscreteMutable() -> DiscreteMutableFuzzySet<Universe> {
+        .init(.init(uniqueKeysWithValues: sequence.map { ($0, self[$0]) }))
     }
 }
 
 // MARK: - Helpers
 
 extension DiscreteMutableFuzzySet {
-    public mutating func applyFunction(_ function: (Grade) -> Grade) {
-        let newGradeTuples = grades.map {
-            ($0.key, function($0.value))
-        }
-        let newMap = Dictionary(uniqueKeysWithValues: newGradeTuples)
-        grades = newMap
-        defaultGrade = function(defaultGrade)
-        sanitize()
-    }
-    
-    public mutating func applyFunction(
-        _ function: (Grade, Grade) -> Grade,
-        whenMergingWith anotherSet: Self
-    ) {
-        grades.merge(anotherSet.grades, uniquingKeysWith: function)
-        defaultGrade = function(defaultGrade, anotherSet.defaultGrade)
-        sanitize()
-    }
-    
     private mutating func sanitize() {
         grades = grades.filter {
             $0.value != defaultGrade
