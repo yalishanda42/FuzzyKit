@@ -1814,6 +1814,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/AnyFuzzySet.swift",
+      "line": 202,
+      "symbol": "AnyFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
       "line": 1,
       "symbol": "DiscreteMutableFuzzySet",
@@ -1983,16 +1990,9 @@
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 127,
-      "symbol": "DiscreteMutableFuzzySet",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 128,
-      "symbol": "DiscreteMutableFuzzySet.support",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 124,
+      "symbol": "DiscreteMutableFuzzySet.applyFunction(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -2004,9 +2004,9 @@
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 137,
-      "symbol": "DiscreteMutableFuzzySet.core",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 134,
+      "symbol": "DiscreteMutableFuzzySet.applyFunction(_:whenMergingWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -2019,56 +2019,77 @@
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
       "line": 146,
+      "symbol": "DiscreteMutableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 147,
+      "symbol": "DiscreteMutableFuzzySet.support",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 156,
+      "symbol": "DiscreteMutableFuzzySet.core",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 165,
       "symbol": "DiscreteMutableFuzzySet.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 153,
+      "line": 172,
       "symbol": "DiscreteMutableFuzzySet.isNormal",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 161,
+      "line": 180,
       "symbol": "DiscreteMutableFuzzySet",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 162,
+      "line": 181,
       "symbol": "DiscreteMutableFuzzySet.fromCrispSet(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 171,
+      "line": 190,
       "symbol": "DiscreteMutableFuzzySet",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 182,
-      "symbol": "DiscreteMutableFuzzySet",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 183,
-      "symbol": "DiscreteMutableFuzzySet.applyFunction(_:)",
+      "line": 203,
+      "symbol": "AnyFuzzySet.makeDiscreteMutable(takeOnly:forOthersUse:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
-      "line": 193,
-      "symbol": "DiscreteMutableFuzzySet.applyFunction(_:whenMergingWith:)",
+      "line": 213,
+      "symbol": "AnyFuzzySet.makeDiscreteMutable(takeOnly:forOthersUse:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/DiscreteMutableFuzzySet.swift",
+      "line": 226,
+      "symbol": "IterableFuzzySet.makeDiscreteMutable()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -2270,100 +2291,93 @@
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 145,
+      "line": 147,
       "symbol": "IterableFuzzySet",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 146,
-      "symbol": "IterableFuzzySet.makeDiscreteMutable()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 153,
-      "symbol": "IterableFuzzySet",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 154,
+      "line": 148,
       "symbol": "IterableFuzzySet.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 158,
+      "line": 152,
       "symbol": "IterableFuzzySet.isNormal",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 163,
+      "line": 157,
       "symbol": "IterableFuzzySet",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 164,
+      "line": 158,
       "symbol": "IterableFuzzySet.support",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 171,
+      "line": 165,
       "symbol": "IterableFuzzySet.core",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 181,
+      "line": 175,
       "symbol": "IterableFuzzySet",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 182,
+      "line": 176,
       "symbol": "IterableFuzzySet.fromCrispSet(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 189,
+      "line": 183,
       "symbol": "IterableFuzzySet",
       "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 184,
+      "symbol": "IterableFuzzySet.singleton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
       "line": 190,
-      "symbol": "IterableFuzzySet.singleton(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 196,
       "symbol": "IterableFuzzySet",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
-      "line": 197,
+      "line": 191,
       "symbol": "IterableFuzzySet.singleton(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzySets/Implementations/IterableFuzzySet.swift",
+      "line": 225,
+      "symbol": "IterableFuzzySet",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     }
   ],
