@@ -14,14 +14,18 @@ public struct TriangularFuzzyNumber {
         self.minimum = minimum
         self.peak = peak
         self.maximum = maximum
-        self.function = .triangular(minimum: minimum, peak: peak, maximum: maximum)
+        self.function =  minimum == peak && peak == maximum
+            ? .fuzzySingleton(peak)
+            : .triangular(minimum: minimum, peak: peak, maximum: maximum)
     }
     
     public init(peak: Universe, leftInterval: Universe, rightInterval: Universe) {
         self.minimum = peak - leftInterval
         self.peak = peak
         self.maximum = peak + rightInterval
-        self.function = .triangular(minimum: minimum, peak: peak, maximum: maximum)
+        self.function =  minimum == peak && peak == maximum
+            ? .fuzzySingleton(peak)
+            : .triangular(minimum: minimum, peak: peak, maximum: maximum)
     }
 }
 
@@ -31,7 +35,7 @@ extension TriangularFuzzyNumber: FuzzySet {
     }
 }
 
-extension TriangularFuzzyNumber: FuzzyNumber {
+extension TriangularFuzzyNumber {
     public static func + (lhs: TriangularFuzzyNumber, rhs: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
         .init(
             minimum: lhs.minimum + rhs.minimum,
@@ -52,7 +56,14 @@ extension TriangularFuzzyNumber: FuzzyNumber {
         .init(minimum: -x.maximum, peak: -x.peak, maximum: -x.minimum)
     }
     
-//
+    public func alphaCut(_ alpha: Grade) -> TriangularFuzzyNumber {
+        .init(
+            minimum: (peak - minimum) * alpha + minimum,
+            peak: peak,
+            maximum: -(maximum - peak) * alpha + maximum
+        )
+    }
+    
 //    public func approximatelyMultiplied(by other: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
 //        // TODO
 //    }
