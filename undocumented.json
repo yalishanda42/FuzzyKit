@@ -638,141 +638,134 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
-      "line": 3,
-      "symbol": "FuzzyNumber",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
-      "line": 5,
-      "symbol": "FuzzyNumber.+(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
-      "line": 7,
-      "symbol": "FuzzyNumber.-(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/FuzzyNumber.swift",
-      "line": 9,
-      "symbol": "FuzzyNumber.-(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
       "line": 3,
       "symbol": "TriangularFuzzyNumber",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
       "line": 5,
       "symbol": "TriangularFuzzyNumber.Universe",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
       "line": 7,
       "symbol": "TriangularFuzzyNumber.minimum",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
       "line": 8,
       "symbol": "TriangularFuzzyNumber.peak",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
       "line": 9,
       "symbol": "TriangularFuzzyNumber.maximum",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
       "line": 13,
       "symbol": "TriangularFuzzyNumber.init(minimum:peak:maximum:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 20,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 22,
       "symbol": "TriangularFuzzyNumber.init(peak:leftInterval:rightInterval:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 28,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 32,
       "symbol": "TriangularFuzzyNumber",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 29,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 33,
       "symbol": "TriangularFuzzyNumber.grade(forElement:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 34,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 38,
       "symbol": "TriangularFuzzyNumber",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 35,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 39,
       "symbol": "TriangularFuzzyNumber.+(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 43,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 47,
       "symbol": "TriangularFuzzyNumber.-(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 51,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 55,
       "symbol": "TriangularFuzzyNumber.-(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 65,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 59,
+      "symbol": "TriangularFuzzyNumber.alphaCut(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 67,
+      "symbol": "TriangularFuzzyNumber.approximatelyMultiplied(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 76,
+      "symbol": "TriangularFuzzyNumber.approximatelyDivided(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 86,
       "symbol": "TriangularFuzzyNumber",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 66,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 87,
       "symbol": "TriangularFuzzyNumber.eraseToAnyFuzzySet()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/Implementations/TriangularFuzzyNumber.swift",
-      "line": 71,
+      "file": "/Users/runner/work/FuzzyKit/FuzzyKit/Sources/FuzzyNumbers/TriangularFuzzyNumber.swift",
+      "line": 92,
       "symbol": "TriangularFuzzyNumber",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
