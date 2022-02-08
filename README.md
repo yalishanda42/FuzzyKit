@@ -135,3 +135,4 @@ All 3 concrete types implement it. It requires the following methods that operat
 
 [MIT](LICENSE)
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fallexks%2FFuzzyKit.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fallexks%2FFuzzyKit?ref=badge_large)
