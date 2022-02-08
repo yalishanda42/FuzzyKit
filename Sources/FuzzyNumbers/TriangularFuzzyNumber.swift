@@ -64,13 +64,23 @@ extension TriangularFuzzyNumber {
         )
     }
     
-//    public func approximatelyMultiplied(by other: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
-//        // TODO
-//    }
-//
-//    public func approximatelyDivided(by other: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
-//        // TODO
-//    }
+    public func approximatelyMultiplied(by other: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
+        let selfAlpha0 = self.alphaCut(0)
+        let otherAlpha0 = other.alphaCut(0)
+        let newMinimum = selfAlpha0.minimum * otherAlpha0.minimum
+        let newMaximum = selfAlpha0.maximum * otherAlpha0.maximum
+        let newPeak = alphaCut(1).minimum * other.alphaCut(1).minimum
+        return .init(minimum: newMinimum, peak: newPeak, maximum: newMaximum)
+    }
+
+    public func approximatelyDivided(by other: TriangularFuzzyNumber) -> TriangularFuzzyNumber {
+        let selfAlpha0 = self.alphaCut(0)
+        let otherAlpha0 = other.alphaCut(0)
+        let newMinimum = selfAlpha0.minimum / otherAlpha0.maximum
+        let newMaximum = selfAlpha0.maximum / otherAlpha0.minimum
+        let newPeak = alphaCut(1).minimum / other.alphaCut(1).maximum
+        return .init(minimum: newMinimum, peak: newPeak, maximum: newMaximum)
+    }
 }
 
 extension  TriangularFuzzyNumber: AnyFuzzySetRepresentable {
